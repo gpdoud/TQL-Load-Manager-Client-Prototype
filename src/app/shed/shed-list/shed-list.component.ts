@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Shed } from '../shed.class';
+import { ShedService } from '../shed.service';
 
 @Component({
   selector: 'app-shed-list',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShedListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private shedsvc : ShedService,
+    private router: Router
+  ) { }
 
+  sheds!: Shed[];
+
+  searchCriteria: string = "";
+  
   ngOnInit(): void {
+    this.shedsvc.list().subscribe(
+      res => {this.sheds = res; console.debug(res)},
+      err => {console.error(err)}
+    )
   }
 
 }
