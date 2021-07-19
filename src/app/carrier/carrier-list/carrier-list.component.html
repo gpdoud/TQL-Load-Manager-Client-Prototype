@@ -1,1 +1,22 @@
 <p>carrier-list works!</p>
+<div>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            <tr *ngFor="let c of carriers">
+                <td>{{c.id}}</td>
+                <td>{{c.name}}</td>
+                <td>{{c.address}}</td>
+                <td>{{c.phone}}</td>
+                <td>{{c.email}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
