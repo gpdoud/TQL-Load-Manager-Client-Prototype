@@ -5,10 +5,18 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ShedCreateComponent } from './shed/shed-create/shed-create.component';
+import { ShedListComponent } from './shed/shed-list/shed-list.component';
+import { ShedDetailComponent } from './shed/shed-detail/shed-detail.component';
+import { ShedEditComponent } from './shed/shed-edit/shed-edit.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShedCreateComponent,
+    ShedListComponent,
+    ShedDetailComponent,
+    ShedEditComponent
   ],
   imports: [
     BrowserModule,
