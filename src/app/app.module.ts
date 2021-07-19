@@ -5,20 +5,33 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { ShedCreateComponent } from './shed/shed-create/shed-create.component';
+import { ShedListComponent } from './shed/shed-list/shed-list.component';
+import { ShedDetailComponent } from './shed/shed-detail/shed-detail.component';
+import { ShedEditComponent } from './shed/shed-edit/shed-edit.component';
+
 import { CarrierListComponent } from './carrier/carrier-list/carrier-list.component';
 import { CarrierEditComponent } from './carrier/carrier-edit/carrier-edit.component';
 import { CarrierDetailComponent } from './carrier/carrier-detail/carrier-detail.component';
 import { CarrierCreateComponent } from './carrier/carrier-create/carrier-create.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
+
+    ShedCreateComponent,
+    ShedListComponent,
+    ShedDetailComponent,
+    ShedEditComponent
     CarrierListComponent,
     CarrierEditComponent,
     CarrierDetailComponent,
     CarrierCreateComponent,
    
+
   ],
   imports: [
     BrowserModule,
