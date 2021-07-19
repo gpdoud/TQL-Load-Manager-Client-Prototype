@@ -25,7 +25,7 @@ import { CarrierCreateComponent } from './carrier/carrier-create/carrier-create.
     ShedCreateComponent,
     ShedListComponent,
     ShedDetailComponent,
-    ShedEditComponent
+    ShedEditComponent,
     CarrierListComponent,
     CarrierEditComponent,
     CarrierDetailComponent,
