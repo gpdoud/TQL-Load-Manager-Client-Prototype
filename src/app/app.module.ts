@@ -5,6 +5,12 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomerListComponent } from './customer/customer-list/customer-list.component';
+import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
+import { CustomerCreateComponent } from './customer/customer-create/customer-create.component';
+import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { ShedCreateComponent } from './shed/shed-create/shed-create.component';
 import { ShedListComponent } from './shed/shed-list/shed-list.component';
@@ -21,7 +27,10 @@ import { CarrierCreateComponent } from './carrier/carrier-create/carrier-create.
 @NgModule({
   declarations: [
     AppComponent,
-
+    CustomerListComponent,
+    CustomerDetailComponent,
+    CustomerCreateComponent,
+    CustomerEditComponent,
     ShedCreateComponent,
     ShedListComponent,
     ShedDetailComponent,
@@ -31,7 +40,6 @@ import { CarrierCreateComponent } from './carrier/carrier-create/carrier-create.
     CarrierDetailComponent,
     CarrierCreateComponent,
    
-
   ],
   imports: [
     BrowserModule,
