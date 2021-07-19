@@ -15,6 +15,7 @@ import { CarrierListComponent } from './carrier/carrier-list/carrier-list.compon
 import { CarrierEditComponent } from './carrier/carrier-edit/carrier-edit.component';
 import { CarrierDetailComponent } from './carrier/carrier-detail/carrier-detail.component';
 import { CarrierCreateComponent } from './carrier/carrier-create/carrier-create.component';
+import { SearchShedPipe } from './shed/search-shed.pipe';
 
 
 
@@ -30,6 +31,7 @@ import { CarrierCreateComponent } from './carrier/carrier-create/carrier-create.
     CarrierEditComponent,
     CarrierDetailComponent,
     CarrierCreateComponent,
+    SearchShedPipe,
    
 
   ],
