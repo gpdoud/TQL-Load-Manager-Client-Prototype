@@ -9,8 +9,7 @@ import { CustomerListComponent } from './customer/customer-list/customer-list.co
 import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
 import { CustomerCreateComponent } from './customer/customer-create/customer-create.component';
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+
 
 import { ShedCreateComponent } from './shed/shed-create/shed-create.component';
 import { ShedListComponent } from './shed/shed-list/shed-list.component';
