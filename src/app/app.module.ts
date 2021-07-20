@@ -5,10 +5,14 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoadCreateComponent } from './load/load-create/load-create.component';
+import { LoadEditComponent } from './load/load-edit/load-edit.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoadCreateComponent,
+    LoadEditComponent
   ],
   imports: [
     BrowserModule,
