@@ -17,6 +17,10 @@ import { ShedCreateComponent } from './shed/shed-create/shed-create.component';
 import { ShedDetailComponent } from './shed/shed-detail/shed-detail.component';
 import { ShedEditComponent } from './shed/shed-edit/shed-edit.component';
 import { ShedListComponent } from './shed/shed-list/shed-list.component';
+import { UserCreateComponent } from './user/user-create/user-create.component';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { UserEditComponent } from './user/user-edit/user-edit.component';
+import { UserListComponent } from './user/user-list/user-list.component';
 
 
 const routes: Routes = [
@@ -24,6 +28,12 @@ const routes: Routes = [
   {path: '', redirectTo: '/load/list', pathMatch: 'full'},
 
 
+
+  {path: 'user/list', component: UserListComponent},
+  {path: 'user/edit/:id', component: UserEditComponent},
+  {path: 'user/create', component: UserCreateComponent},
+  {path: 'user/detail/:id', component: UserDetailComponent},
+  
   {path: 'shed/list', component: ShedListComponent},
   {path: 'shed/edit/:id', component: ShedEditComponent},
   {path: 'shed/create', component: ShedCreateComponent},
