@@ -5,13 +5,15 @@
             <th>Student</th>
             <th>Student Looking Spiffy</th>
             <th>Home Location</th>
-            <th>Contributed</th>
+            <th>Chosen Superpower</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let student of students">
-            <td></td>
+            <td>{{student.firstname}} {{student.lastname}}</td>
+            <td><img [src]="student.photo"></td>
+            <td>{{student.city}}, {{student.state}} {{student.zip}}</td>
+            <td>{{student.power}}</td>
         </tr>
     </tbody>
-
 </table>
