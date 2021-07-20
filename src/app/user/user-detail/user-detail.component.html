@@ -1,0 +1,34 @@
+<h3>User Detail</h3>
+<table>
+    <tbody>
+        <tr>
+            <th>Id:</th>
+            <td>{{user.id}}</td>
+        </tr>
+        <tr>
+            <th>Username:</th>
+            <td>{{user.username}}</td>
+        </tr>
+        <tr>
+            <th>Password:</th>
+            <td>{{user.password}}</td>
+        </tr>
+        <tr>
+            <th>Firstname:</th>
+            <td>{{user.firstname}}</td>
+        </tr>
+        <tr>
+            <th>Lastname:</th>
+            <td>{{user.lastname}}</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>{{user.email}}</td>
+        </tr>
+        <tr>
+            <th>Admin:</th>
+            <td>{{user.isAdmin ? "YES":"NO"}}</td>
+        </tr>
+    </tbody>
+    </table>
+<button (click)="deleteUser()" class = "btn btn-primary">Delete</button>

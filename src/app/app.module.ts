@@ -5,6 +5,10 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UserListComponent } from './user/user-list/user-list.component';
+import { UserCreateComponent } from './user/user-create/user-create.component';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 import { LoadCreateComponent } from './load/load-create/load-create.component';
 import { LoadEditComponent } from './load/load-edit/load-edit.component';
@@ -37,6 +41,12 @@ import { AboutComponent } from './misc/about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
+
+    UserListComponent,
+    UserCreateComponent,
+    UserDetailComponent,
+    UserEditComponent,
+
     LoadCreateComponent,
     LoadEditComponent,
     LoadListComponent,
@@ -60,6 +70,7 @@ import { AboutComponent } from './misc/about/about.component';
     AboutComponent
 
    
+
   ],
   imports: [
     BrowserModule,
