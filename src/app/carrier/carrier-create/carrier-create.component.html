@@ -1,1 +1,24 @@
-<p>carrier-create works!</p>
+<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="carrier.id" type="number" name="Id" disabled></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input [(ngModel)]="carrier.name" type="string" name="name" placeholder="Name"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input [(ngModel)]="carrier.address" type="string" name="address" placeholder="Address"></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input [(ngModel)]="carrier.phone" type="string" name="phone" placeholder="Phone"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input [(ngModel)]="carrier.email" type="string" name="email" placeholder="Email"></td>
+        </tr>
+    </table>
+</div>
