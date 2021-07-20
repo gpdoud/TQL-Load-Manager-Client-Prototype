@@ -21,8 +21,11 @@ import { CarrierEditComponent } from './carrier/carrier-edit/carrier-edit.compon
 import { CarrierDetailComponent } from './carrier/carrier-detail/carrier-detail.component';
 import { CarrierCreateComponent } from './carrier/carrier-create/carrier-create.component';
 import { SearchShedPipe } from './shed/search-shed.pipe';
+
+import { NavbarComponent } from './navbar/navbar.component';
 import { E404Component } from './misc/e404/e404.component';
 import { AboutComponent } from './misc/about/about.component';
+
 
 
 
@@ -42,8 +45,12 @@ import { AboutComponent } from './misc/about/about.component';
     CarrierDetailComponent,
     CarrierCreateComponent,
     SearchShedPipe,
+
+    NavbarComponent,
+
     E404Component,
-    AboutComponent,
+    AboutComponent
+
    
   ],
   imports: [
