@@ -1,3 +1,8 @@
+import { Carrier } from "../carrier/carrier";
+import { Customer } from "../customer/customer.class";
+import { Shed } from "../shed/shed.class";
+import { User } from "../user/user.class";
+
 export class Load {
     id: number = 0;
     PoNumber: number = 0;
