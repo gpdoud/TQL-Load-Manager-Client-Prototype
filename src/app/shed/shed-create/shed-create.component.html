@@ -1,1 +1,33 @@
-<p>shed-create works!</p>
+<table>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <td><input [(ngModel)]="newShed.name" type="text"></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><input [(ngModel)]="newShed.address" type="text"></td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td><input [(ngModel)]="newShed.city" type="text"></td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td><input [(ngModel)]="newShed.state" type="text"></td>
+        </tr>
+        <tr>
+            <th>Zip</th>
+            <td><input [(ngModel)]="newShed.zip" type="text"></td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td><input [(ngModel)]="newShed.phone" type="text"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input [(ngModel)]="newShed.email" type="text"></td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="create()">Create Shed</button>
