@@ -1,4 +1,4 @@
-import { Carrier } from "../carrier/carrier";
+import { Carrier } from "../carrier/carrier.class";
 import { Customer } from "../customer/customer.class";
 import { Shed } from "../shed/shed.class";
 import { User } from "../user/user.class";

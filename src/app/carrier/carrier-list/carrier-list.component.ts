@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Carrier } from '../carrier';
+import { Carrier } from '../carrier.class';
 import { CarrierService } from '../carrier.service';
 
 @Component({

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Carrier } from './carrier';
+import { Carrier } from './carrier.class';
 
 @Injectable({
   providedIn: 'root'
