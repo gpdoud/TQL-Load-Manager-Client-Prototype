@@ -9,6 +9,10 @@ import { CustomerCreateComponent } from './customer/customer-create/customer-cre
 import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
+import { LoadCreateComponent } from './load/load-create/load-create.component';
+import { LoadEditComponent } from './load/load-edit/load-edit.component';
+import { LoadListComponent } from './load/load-list/load-list.component';
+import { E404Component } from './misc/e404/e404.component';
 import { ShedCreateComponent } from './shed/shed-create/shed-create.component';
 import { ShedDetailComponent } from './shed/shed-detail/shed-detail.component';
 import { ShedEditComponent } from './shed/shed-edit/shed-edit.component';
@@ -36,8 +40,12 @@ const routes: Routes = [
   {path: 'customer/create', component: CustomerCreateComponent},
   {path: 'customer/detail/:id', component: CustomerDetailComponent},
 
+  {path: 'load/list', component: LoadListComponent},
+  {path: 'load/edit/:id', component: LoadEditComponent},
+  {path: 'load/create', component: LoadCreateComponent},
 
-  // {path: '**', component: E404Component}
+
+  {path: '**', component: E404Component}
 ];
 
 @NgModule({
