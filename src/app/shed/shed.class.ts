@@ -5,4 +5,6 @@ export class Shed{
     city: string = "";
     state: string = "";
     zip: string = "";
+    phone: string = "";
+    email: string = "";
 }
