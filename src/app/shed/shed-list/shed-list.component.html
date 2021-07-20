@@ -1,0 +1,22 @@
+<h1>Sheds</h1>
+<p><input type="text" [(ngModel)]="searchCriteria" placeholder="Search"></p>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let shed of sheds | searchShed:searchCriteria">
+            <td>{{shed.name}}</td>
+            <td>{{shed.address}}</td>
+            <td>{{shed.city}}</td>
+            <td>{{shed.state}}</td>
+            <td>{{shed.zip}}</td>
+        </tr>
+    </tbody>
+</table>
