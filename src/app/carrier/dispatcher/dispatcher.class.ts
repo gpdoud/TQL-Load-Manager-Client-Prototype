@@ -5,5 +5,6 @@ lastName: string ="";
 phone: string="";
 email: string="";
 faxNumber: string="";
+approvedForComchecks: boolean =false;
 }
 

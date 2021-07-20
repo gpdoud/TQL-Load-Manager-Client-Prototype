@@ -7,4 +7,5 @@ email: string="";
 truckNumber: string ="";
 trailerNumber: string="";
 equipmentType: string="";
+approvedForComchecks: boolean =false;
 }

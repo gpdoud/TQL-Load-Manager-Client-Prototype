@@ -1,5 +1,5 @@
-import { Dispatcher } from "./dispatcher.class";
-import { Driver } from "./driver.class";
+import { Dispatcher } from "./dispatcher/dispatcher.class";
+import { Driver } from "./driver/driver.class";
 
 export class Carrier {
     id: number = 0;
