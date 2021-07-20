@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Load } from '../load.class';
 
 @Component({
   selector: 'app-load-edit',
@@ -9,6 +10,7 @@ export class LoadEditComponent implements OnInit {
 
   constructor() { }
 
+  load!: Load;
   ngOnInit(): void {
   }
 
