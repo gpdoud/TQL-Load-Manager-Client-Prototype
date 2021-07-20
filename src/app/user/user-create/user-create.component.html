@@ -1,0 +1,32 @@
+<h3>User Create</h3>
+<table>
+    <tr>
+        <th>Id:</th>
+        <td><input [(ngModel)]="user.id" type = "number" placeholder = "User id" disabled></td>
+    </tr>
+    <tr>
+        <th>Username:</th>
+        <td><input [(ngModel)]= "user.username" type = "text"></td>
+    </tr>
+    <tr>
+        <th>Password:</th>
+        <td><input [(ngModel)]= "user.password" type = "password"></td>
+    </tr>
+    <tr>
+        <th>Firstname:</th>
+        <td><input [(ngModel)] = "user.firstname" type = "text"></td>
+    </tr>
+    <tr>
+        <th>Lastname:</th>
+        <td><input [(ngModel)] = "user.lastname" type = "text"></td>
+    </tr>
+    <tr>
+        <th>Email:</th>
+        <td><input [(ngModel)] = "user.email" type = "text"></td>
+    </tr>
+    <tr>
+        <th>Admin:</th>
+        <td><input [(ngModel)] = "user.isAdmin" type = "checkbox"></td>
+    </tr>
+</table>
+<button (click)="saveCreate()" class = "btn btn-primary">Save</button>
