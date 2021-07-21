@@ -13,6 +13,18 @@
             <td><input [(ngModel)]="carrier.address" type="string" name="address" placeholder="Address"></td>
         </tr>
         <tr>
+            <td>City</td>
+            <td><input [(ngModel)]="carrier.city" type="string" name="address" placeholder="Address"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input [(ngModel)]="carrier.address" type="string" name="address" placeholder="Address"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input [(ngModel)]="carrier.address" type="string" name="address" placeholder="Address"></td>
+        </tr>
+        <tr>
             <td>Phone</td>
             <td><input [(ngModel)]="carrier.phone" type="string" name="phone" placeholder="Phone"></td>
         </tr>
@@ -21,4 +33,5 @@
             <td><input [(ngModel)]="carrier.email" type="string" name="email" placeholder="Email"></td>
         </tr>
     </table>
+    <button (click)='save()' class="btn btn-primary">Save</button>
 </div>
