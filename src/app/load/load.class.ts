@@ -12,7 +12,7 @@ export class Load {
     customerId: number = 0;
     customer: Customer | null = null;
 
-    pickDate: Date = Date.;
+    pickDate!: Date;
     pickId: number = 0;
     pick: Shed | null = null;
 
