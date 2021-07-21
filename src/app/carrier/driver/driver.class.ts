@@ -6,6 +6,6 @@ phone: string="";
 email: string="";
 truckNumber: string ="";
 trailerNumber: string="";
-equipmentType: string="";
-approvedForComchecks: boolean =false;
+equipment: string="";
+isCckApproved: boolean =false;
 }

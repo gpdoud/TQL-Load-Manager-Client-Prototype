@@ -36,8 +36,11 @@
     </table>
     <hr>
     <h2>Dispatchers</h2>
+    <span>
+        <a routerLink="/dispatcher/create">Add Dispatcher</a>
+    </span>
     <table *ngif="carrier">
-        <tr >
+        <tr>
             <th>Id</th>
             <th>Firstname</th>
             <th>Lastname</th>
@@ -49,18 +52,21 @@
         </tr>
         <tr *ngFor="let d of carrier.dispatchers">
             <td>{{d.id}}</td>
-            <td>{{d.firstName}}</td>
-            <td>{{d.lastName}}</td>
+            <td>{{d.firstname}}</td>
+            <td>{{d.lastname}}</td>
             <td>{{d.phone}}</td>
             <td>{{d.email}}</td>
-            <td>{{d.faxNumber}}</td>
-            <td>{{d.approvedForComchecks}}</td>
+            <td>{{d.fax}}</td>
+            <td>{{d.isCckApproved}}</td>
         </tr>
     </table>
     <hr>
     <h2>Drivers</h2>
+    <span>
+        <a routerLink="/driver/create">Add Driver</a>
+    </span>
     <table *ngif="carrier">
-        <tr >
+        <tr>
             <th>Id</th>
             <th>Firstname</th>
             <th>Lastname</th>
@@ -72,12 +78,12 @@
         </tr>
         <tr *ngFor="let d of carrier.dispatchers">
             <td>{{d.id}}</td>
-            <td>{{d.firstName}}</td>
-            <td>{{d.lastName}}</td>
+            <td>{{d.firstname}}</td>
+            <td>{{d.lastname}}</td>
             <td>{{d.phone}}</td>
             <td>{{d.email}}</td>
-            <td>{{d.faxNumber}}</td>
-            <td>{{d.approvedForComchecks}}</td>
+            <td>{{d.fax}}</td>
+            <td>{{d.isCckApproved}}</td>
         </tr>
     </table>
 
