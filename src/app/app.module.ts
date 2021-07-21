@@ -34,6 +34,7 @@ import { SearchShedPipe } from './shed/search-shed.pipe';
 import { NavbarComponent } from './navbar/navbar.component';
 import { E404Component } from './misc/e404/e404.component';
 import { AboutComponent } from './misc/about/about.component';
+import { SearchUserPipe } from './user/search-user.pipe';
 
 
 
@@ -67,7 +68,8 @@ import { AboutComponent } from './misc/about/about.component';
     NavbarComponent,
 
     E404Component,
-    AboutComponent
+    AboutComponent,
+    SearchUserPipe
 
    
 
