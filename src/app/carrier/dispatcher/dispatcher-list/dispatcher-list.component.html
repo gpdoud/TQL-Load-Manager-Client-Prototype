@@ -1,1 +1,25 @@
-<p>dispatcher-list works!</p>
+<div>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Firsname</th>
+                <th>Lastname</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>FaxNumber</th>
+                <th>Approved For Comchecks</th>
+            </tr>
+            <tr *ngFor="let d of dispatchers">
+                <td>{{d.id}}</td>
+                <td>{{d.firstName}}</td>
+                <td>{{d.lastName}}</td>
+                <td>{{d.phone}}</td>
+                <td>{{d.email}}</td>
+                <td>{{d.FaxNumber}}</td>
+                <td>{{d.approvedForComchecks}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
