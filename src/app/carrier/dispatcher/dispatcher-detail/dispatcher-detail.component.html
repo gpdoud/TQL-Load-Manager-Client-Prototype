@@ -1,0 +1,35 @@
+<div>
+    <table  *ngIf="dispatcher">
+        <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="dispatcher.id" type="number" disabled></td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td><input [(ngModel)]="dispatcher.firstname" type="text" disabled></td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td><input [(ngModel)]="dispatcher.lastname" type="text" disabled></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input [(ngModel)]="dispatcher.phone" type="text" disabled></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input [(ngModel)]="dispatcher.email" type="text" disabled></td>
+        </tr>
+        <tr>
+            <td>Fax</td>
+            <td><input [(ngModel)]="dispatcher.fax" type="text" disabled></td>
+        </tr>
+        <tr>
+            <td>IsCckApproved</td>
+            <td><input [(ngModel)]="dispatcher.isCckApproved" type="checkbox" disabled></td>
+        </tr>
+    </table>
+    <div>
+        <button class="btn btn-danger" (click)="deleteDispatcher()">Delete</button>
+    </div>
+</div>

@@ -1,4 +1,3 @@
-<p>carrier-list works!</p>
 <div>
     <hr>
     <div>
@@ -7,15 +6,29 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
                 <th>Phone</th>
                 <th>Email</th>
+                <th>Actions</th>
             </tr>
             <tr *ngFor="let c of carriers">
                 <td>{{c.id}}</td>
                 <td>{{c.name}}</td>
                 <td>{{c.address}}</td>
+                <td>{{c.city}}</td>
+                <td>{{c.state}}</td>
+                <td>{{c.zip}}</td>
                 <td>{{c.phone}}</td>
                 <td>{{c.email}}</td>
+                <span>
+                    <a routerLink="/carrier/detail/{{c.id}}">Detail</a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a routerLink="/carrier/edit/{{c.id}}">Edit</a>
+                </span>
             </tr>
         </table>
     </div>

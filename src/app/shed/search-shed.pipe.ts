@@ -11,7 +11,7 @@ export class SearchShedPipe implements PipeTransform {
       return sheds;
     }
     let search = searchCriteria.toLowerCase();
-    let selectedCusts: Shed[] = [];
+    let selectedSheds: Shed[] = [];
     for(let shed of sheds){
       if(shed.id.toString().includes(search)
     || shed.name.toLowerCase().includes(search)
@@ -20,10 +20,10 @@ export class SearchShedPipe implements PipeTransform {
     || shed.state.toLowerCase().includes(search)
     || shed.zip.toLowerCase().includes(search)
     ){
-        selectedCusts.push(shed);
+        selectedSheds.push(shed);
       }
     }
-    return selectedCusts;
+    return selectedSheds;
   }
 
 }

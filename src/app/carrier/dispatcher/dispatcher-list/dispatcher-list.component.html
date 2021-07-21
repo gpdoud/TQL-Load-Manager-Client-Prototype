@@ -1,0 +1,25 @@
+<div>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Firsname</th>
+                <th>Lastname</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>FaxNumber</th>
+                <th>Approved For Comchecks</th>
+            </tr>
+            <tr *ngFor="let d of dispatchers">
+                <td>{{d.id}}</td>
+                <td>{{d.firstname}}</td>
+                <td>{{d.lastname}}</td>
+                <td>{{d.phone}}</td>
+                <td>{{d.email}}</td>
+                <td>{{d.fax}}</td>
+                <td>{{d.isCckApproved}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

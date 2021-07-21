@@ -1,0 +1,33 @@
+<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="dispatcher.id" type="number" disabled></td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td><input [(ngModel)]="dispatcher.firstname" type="text" ></td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td><input [(ngModel)]="dispatcher.lastname" type="text" ></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input [(ngModel)]="dispatcher.phone" type="text" ></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input [(ngModel)]="dispatcher.email" type="text" ></td>
+        </tr>
+        <tr>
+            <td>Fax</td>
+            <td><input [(ngModel)]="dispatcher.fax" type="text" ></td>
+        </tr>
+        <tr>
+            <td>IsCckApproved</td>
+            <td><input [(ngModel)]="dispatcher.isCckApproved" type="checkbox" ></td>
+        </tr>
+    </table>
+    <button (click)='save()' class="btn btn-primary">Save</button>
+</div>
