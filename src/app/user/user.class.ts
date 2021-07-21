@@ -1,9 +1,10 @@
 export class User {
-    id: number = 1;
+    id: number = 0;
     username: string = "";
     password: string = "";
     firstname: string = "";
     lastname: string = "";
     email: string = "";
+    phone: string = "";
     isAdmin: boolean = false;
 }

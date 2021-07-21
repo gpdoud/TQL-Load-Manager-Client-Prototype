@@ -34,6 +34,9 @@ import { SearchShedPipe } from './shed/search-shed.pipe';
 import { NavbarComponent } from './navbar/navbar.component';
 import { E404Component } from './misc/e404/e404.component';
 import { AboutComponent } from './misc/about/about.component';
+
+import { SearchUserPipe } from './user/search-user.pipe';
+
 import { DriverCreateComponent } from './carrier/driver/driver-create/driver-create.component';
 import { DriverEditComponent } from './carrier/driver/driver-edit/driver-edit.component';
 import { DriverDetailComponent } from './carrier/driver/driver-detail/driver-detail.component';
@@ -42,6 +45,7 @@ import { DispatcherListComponent } from './carrier/dispatcher/dispatcher-list/di
 import { DispatcherEditComponent } from './carrier/dispatcher/dispatcher-edit/dispatcher-edit.component';
 import { DispatcherCreateComponent } from './carrier/dispatcher/dispatcher-create/dispatcher-create.component';
 import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detail/dispatcher-detail.component';
+
 
 
 
@@ -77,6 +81,9 @@ import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detai
 
     E404Component,
     AboutComponent,
+
+    SearchUserPipe,
+
     DriverCreateComponent,
     DriverEditComponent,
     DriverDetailComponent,
@@ -86,6 +93,7 @@ import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detai
     DispatcherCreateComponent,
     DispatcherDetailComponent,
     
+
 
    
 
