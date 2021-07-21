@@ -1,1 +1,42 @@
-<p>customer-list works!</p>
+
+
+    <div>
+        <a routerLink = "/customer/create">Create</a>
+    </div>
+  <div>
+      <table class="table table=striped table-sm">
+          <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Zip</th>
+                  <th>Status</th>
+                  <th>User</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor = "let c of customers">
+                  <td>{{c.id}}</td>
+                  <td>{{c.name}}</td>
+                  <td>{{c.address}}</td>
+                  <td>{{c.city}}</td>
+                  <td>{{c.state}}</td>
+                  <td>{{c.zip}}</td>
+                  <td>{{c.status ? "Active":"Inactive"}}</td>
+                  <td>{{c.user?.username}}</td>
+                  <td>
+                    <span>
+                        <a routerLink = "/customer/detail/{{c.id}}">Detail</a>
+                    </span>
+                    <span> | </span>
+                    <span>
+                        <a routerLink = "/customer/edit/{{c.id}}">Edit</a>
+                    </span>
+              </tr>
+          </tbody>
+      </table>
+  </div>  
+
