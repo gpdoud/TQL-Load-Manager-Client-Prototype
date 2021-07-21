@@ -16,6 +16,9 @@ export class LoadService {
   list(): Observable<Load[]> {
     return this.http.get(`${this.baseurl}`) as Observable<Load[]>;
   }
+  get(id: number): Observable<Load> {
+    return this.http.get(`${this.baseurl}/${id}`) as Observable<Load>;
+  }
   create(load: Load): Observable<Load> {
     return this.http.post(`${this.baseurl}`, load) as Observable<Load>;
   }

@@ -5,22 +5,23 @@ import { User } from "../user/user.class";
 
 export class Load {
     id: number = 0;
-    PoNumber: number = 0;
-    PayTruckRate: number = 0;
-    CustomerBillRate: number = 0;
+    poNumber: number = 0;
+    payTruckRate: number = 0;
+    customerBillRate: number = 0;
 
-    CustomerId: number = 0;
+    customerId: number = 0;
     customer: Customer | null = null;
 
-    PickId: number = 0;
+    pickDate: Date = Date.;
+    pickId: number = 0;
     pick: Shed | null = null;
 
-    DropId: number = 0;
+    dropId: number = 0;
     drop: Shed | null = null;
 
-    CarrierId: number = 0;
+    carrierId: number = 0;
     carrier: Carrier | null = null;
 
-    UserId: number = 0;
+    userId: number = 0;
     user: User | null = null;
 }
