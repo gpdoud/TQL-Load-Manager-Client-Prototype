@@ -1,25 +1,87 @@
-<p>carrier-detail works!</p>
 <div>
+    <h3>Carrier Details</h3>
     <table>
         <tr>
             <td>Id</td>
-            <td><input [(ngModel)] ="carrier.id" type="number" disabled></td>
+            <td><input [(ngModel)]="carrier.id" type="number" disabled></td>
         </tr>
         <tr>
             <td>Name</td>
-            <td><input [(ngModel)] ="carrier.name" type="string" disabled></td>
+            <td><input [(ngModel)]="carrier.name" type="string" disabled></td>
         </tr>
         <tr>
             <td>Address</td>
-            <td><input [(ngModel)] ="carrier.address" type="string" disabled></td>
+            <td><input [(ngModel)]="carrier.address" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input [(ngModel)]="carrier.city" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td><input [(ngModel)]="carrier.state" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>Zip</td>
+            <td><input [(ngModel)]="carrier.zip" type="string" disabled></td>
         </tr>
         <tr>
             <td>Phone</td>
-            <td><input [(ngModel)] ="carrier.phone" type="string" disabled></td>
+            <td><input [(ngModel)]="carrier.phone" type="string" disabled></td>
         </tr>
         <tr>
             <td>Email</td>
-            <td><input [(ngModel)] ="carrier.email" type="string" disabled></td>
-        </tr>        
+            <td><input [(ngModel)]="carrier.email" type="string" disabled></td>
+        </tr>
     </table>
+    <hr>
+    <h2>Dispatchers</h2>
+    <table *ngif="carrier">
+        <tr >
+            <th>Id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Fax Number</th>
+            <th>Approved For Comchecks</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let d of carrier.dispatchers">
+            <td>{{d.id}}</td>
+            <td>{{d.firstName}}</td>
+            <td>{{d.lastName}}</td>
+            <td>{{d.phone}}</td>
+            <td>{{d.email}}</td>
+            <td>{{d.faxNumber}}</td>
+            <td>{{d.approvedForComchecks}}</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Drivers</h2>
+    <table *ngif="carrier">
+        <tr >
+            <th>Id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Fax Number</th>
+            <th>Approved For Comchecks</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let d of carrier.dispatchers">
+            <td>{{d.id}}</td>
+            <td>{{d.firstName}}</td>
+            <td>{{d.lastName}}</td>
+            <td>{{d.phone}}</td>
+            <td>{{d.email}}</td>
+            <td>{{d.faxNumber}}</td>
+            <td>{{d.approvedForComchecks}}</td>
+        </tr>
+    </table>
+
+
+
+
 </div>
