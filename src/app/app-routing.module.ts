@@ -5,6 +5,14 @@ import { CarrierCreateComponent } from './carrier/carrier-create/carrier-create.
 import { CarrierDetailComponent } from './carrier/carrier-detail/carrier-detail.component';
 import { CarrierEditComponent } from './carrier/carrier-edit/carrier-edit.component';
 import { CarrierListComponent } from './carrier/carrier-list/carrier-list.component';
+import { DispatcherCreateComponent } from './carrier/dispatcher/dispatcher-create/dispatcher-create.component';
+import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detail/dispatcher-detail.component';
+import { DispatcherEditComponent } from './carrier/dispatcher/dispatcher-edit/dispatcher-edit.component';
+import { DispatcherListComponent } from './carrier/dispatcher/dispatcher-list/dispatcher-list.component';
+import { DriverCreateComponent } from './carrier/driver/driver-create/driver-create.component';
+import { DriverDetailComponent } from './carrier/driver/driver-detail/driver-detail.component';
+import { DriverEditComponent } from './carrier/driver/driver-edit/driver-edit.component';
+import { DriverListComponent } from './carrier/driver/driver-list/driver-list.component';
 import { CustomerCreateComponent } from './customer/customer-create/customer-create.component';
 import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
@@ -49,6 +57,16 @@ const routes: Routes = [
   {path: 'customer/edit/:id', component: CustomerEditComponent},
   {path: 'customer/create', component: CustomerCreateComponent},
   {path: 'customer/detail/:id', component: CustomerDetailComponent},
+
+  {path: 'dispatcher/list', component: DispatcherListComponent},
+  {path: 'dispatcher/edit/:id', component: DispatcherEditComponent},
+  {path: 'dispatcher/create', component: DispatcherCreateComponent},
+  {path: 'dispatcher/detail/:id', component: DispatcherDetailComponent},
+
+  {path: 'driver/list', component: DriverListComponent},
+  {path: 'driver/edit/:id', component: DriverEditComponent},
+  {path: 'driver/create', component: DriverCreateComponent},
+  {path: 'driver/detail/:id', component: DriverDetailComponent},
 
   {path: 'load/list', component: LoadListComponent},
   {path: 'load/edit/:id', component: LoadEditComponent},
