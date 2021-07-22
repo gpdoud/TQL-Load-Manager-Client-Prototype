@@ -45,6 +45,7 @@ import { DispatcherListComponent } from './carrier/dispatcher/dispatcher-list/di
 import { DispatcherEditComponent } from './carrier/dispatcher/dispatcher-edit/dispatcher-edit.component';
 import { DispatcherCreateComponent } from './carrier/dispatcher/dispatcher-create/dispatcher-create.component';
 import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detail/dispatcher-detail.component';
+import { LoadDetailComponent } from './load/load-detail/load-detail.component';
 
 
 
@@ -92,6 +93,7 @@ import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detai
     DispatcherEditComponent,
     DispatcherCreateComponent,
     DispatcherDetailComponent,
+    LoadDetailComponent,
     
 
 

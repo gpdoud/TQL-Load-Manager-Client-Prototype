@@ -12,9 +12,6 @@ export class Load {
     customerId: number = 0;
     customer: Customer | null = null;
 
-    pickDate!: Date;
-    pickId: number = 0;
-    pick: Shed | null = null;
 
     dropId: number = 0;
     drop: Shed | null = null;
@@ -22,6 +19,6 @@ export class Load {
     carrierId: number = 0;
     carrier: Carrier | null = null;
 
-    userId: number = 0;
-    user: User | null = null;
+    // userId: number = 0;
+    // user: User | null = null;
 }
