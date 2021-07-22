@@ -26,11 +26,11 @@ export class DriverCreateComponent implements OnInit {
 
 
   save(): void {
-    this.newDriver.carrierId = +this.carrierId
+    this.newDriver.carrierId = +this.getId()
     console.debug("B4", this.newDriver);
     this.driversvc.create(this.newDriver).subscribe(
       res => {
-        console.log("Create successful"); this.router.navigateByUrl(`carrier/detail/${this.getId()}`)
+        console.log("Create successful",this.newDriver); this.router.navigateByUrl(`carrier/detail/${this.getId()}`)
       },
       err => {
         console.error(err);
@@ -41,7 +41,7 @@ export class DriverCreateComponent implements OnInit {
 
   getId(): number {
     const routeParams = this.route.snapshot.paramMap;
-    const id = Number(routeParams.get('id'))
+    const id = Number(routeParams.get('carrierid'))
     return id;
   }
 

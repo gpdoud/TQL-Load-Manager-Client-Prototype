@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Dispatcher } from '../dispatcher.class';
 import { DispatcherService } from '../dispatcher.service';
 
@@ -10,12 +10,14 @@ import { DispatcherService } from '../dispatcher.service';
 })
 export class DispatcherCreateComponent implements OnInit {
 
+  newDispatcher = new Dispatcher();
   dispatcher: Dispatcher = new Dispatcher();
   dispatchers: Dispatcher[] = [];
 
   constructor(
     private dispatchersvc: DispatcherService,
-    private router: Router
+    private router: Router,
+    private route : ActivatedRoute
   ) { }
 
     save(): void {
@@ -29,6 +31,12 @@ export class DispatcherCreateComponent implements OnInit {
     }
 
 
+    getId(): number {
+      const routeParams = this.route.snapshot.paramMap;
+      const id = Number(routeParams.get('carrierid'))
+      return id;
+    }
+  
 
   ngOnInit(): void {
     this.dispatchersvc.list().subscribe(
