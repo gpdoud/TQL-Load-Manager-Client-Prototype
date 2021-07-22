@@ -1,1 +1,40 @@
-<p>driver-edit works!</p>
+<div>
+    <table *ngIf="driver">
+        <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="driver.id" type="number" disabled></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="driver.firstname" type="text" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="driver.lastname" type="text" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="driver.phone" type="text" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="driver.email" type="text" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="driver.truckNumber" type="text" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="driver.trailerNumber" type="text" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="driver.equipment" type="text" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="driver.isCckApproved" type="checkbox" ></td>
+        </tr>
+    </table>
+</div>

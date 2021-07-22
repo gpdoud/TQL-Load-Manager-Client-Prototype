@@ -1,7 +1,7 @@
 export class Driver {
 id: number = 0;
-firstName: string ="";
-lastName: string ="";
+firstname: string ="";
+lastname: string ="";
 phone: string="";
 email: string="";
 truckNumber: string ="";
