@@ -46,6 +46,7 @@ import { DispatcherEditComponent } from './carrier/dispatcher/dispatcher-edit/di
 import { DispatcherCreateComponent } from './carrier/dispatcher/dispatcher-create/dispatcher-create.component';
 import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detail/dispatcher-detail.component';
 import { SearchCustomerPipe } from './customer/search-customer.pipe';
+import { SortPipe } from './misc/sort.pipe';
 
 
 
@@ -94,6 +95,7 @@ import { SearchCustomerPipe } from './customer/search-customer.pipe';
     DispatcherCreateComponent,
     DispatcherDetailComponent,
     SearchCustomerPipe,
+    SortPipe,
     
 
 
