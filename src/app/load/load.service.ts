@@ -8,7 +8,7 @@ import { Load } from './load.class';
 })
 export class LoadService {
 
-  baseurl: string = "http://localhost:7400/api/loads"
+  baseurl: string = "http://localhost:7400/api/users"
   constructor(
     private http: HttpClient
   ) { }
