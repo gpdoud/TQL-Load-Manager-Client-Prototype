@@ -17,6 +17,7 @@ import { CustomerCreateComponent } from './customer/customer-create/customer-cre
 import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
+import { DashComponent } from './dash/dash.component';
 import { LoadCreateComponent } from './load/load-create/load-create.component';
 import { LoadEditComponent } from './load/load-edit/load-edit.component';
 import { LoadListComponent } from './load/load-list/load-list.component';
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path: '', redirectTo: '/load/list', pathMatch: 'full'},
 
 
+  {path: 'dashboard', component: DashComponent},
 
   {path: 'user/list', component: UserListComponent},
   {path: 'user/edit/:id', component: UserEditComponent},
