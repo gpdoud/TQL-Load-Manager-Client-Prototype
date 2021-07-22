@@ -45,7 +45,6 @@ import { DispatcherListComponent } from './carrier/dispatcher/dispatcher-list/di
 import { DispatcherEditComponent } from './carrier/dispatcher/dispatcher-edit/dispatcher-edit.component';
 import { DispatcherCreateComponent } from './carrier/dispatcher/dispatcher-create/dispatcher-create.component';
 import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detail/dispatcher-detail.component';
-import { LoadDetailComponent } from './load/load-detail/load-detail.component';
 import { DashComponent } from './dash/dash.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -103,7 +102,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     DispatcherCreateComponent,
 
     DispatcherDetailComponent,
-    LoadDetailComponent,
+    
     
 
     DispatcherDetailComponent,    
