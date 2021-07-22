@@ -33,7 +33,7 @@ private driversvc: DriverService
     this.driver.id = +this.driver.id;
     console.debug("B4", this.driver);
     this.driversvc.change(this.driver).subscribe(
-     res => {console.log("Driver Created"); this.router.navigateByUrl("driver/list");},
+     res => {console.log("Driver Created"); this.router.navigateByUrl("carrier/list");},
      err => {console.error(err)});
   }  
 

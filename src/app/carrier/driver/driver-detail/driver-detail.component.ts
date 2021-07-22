@@ -31,7 +31,7 @@ export class DriverDetailComponent implements OnInit {
   deleteDriver() {
     this.id = this.route.snapshot.params.id
     this.driversvc.remove(this.id).subscribe(
-      res => { console.log("Driver successfully removed:", res); this.driver = res; this.router.navigateByUrl("driver/list"); },
+      res => { console.log("Driver successfully removed:", res); this.driver = res; this.router.navigateByUrl("/carrier/detail/{{c.id}}"); },
       err => { console.error(err) })
   };
 
