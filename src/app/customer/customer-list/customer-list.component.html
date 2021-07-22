@@ -2,9 +2,10 @@
 
     <div>
         <a routerLink = "/customer/create">Create</a>
+        | <input [(ngModel)]="searchCriteria" type="text" placeholder="Search"
     </div>
   <div>
-      <table class="table table=striped table-sm">
+      <table class="table table=hover table-sm">
           <thead>
               <tr>
                   <th>Id</th>
@@ -18,7 +19,7 @@
               </tr>
           </thead>
           <tbody>
-              <tr *ngFor = "let c of customers">
+              <tr *ngFor = "let c of customers | searchCustomer:searchCriteria">
                   <td>{{c.id}}</td>
                   <td>{{c.name}}</td>
                   <td>{{c.address}}</td>

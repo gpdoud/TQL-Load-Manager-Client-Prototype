@@ -12,6 +12,8 @@ export class CustomerListComponent implements OnInit {
   customers:Customer [] = [];
   users: User [] = [];
 
+  searchCriteria: string ="";
+
   constructor(
     private custsvc: CustomerService
   ) { }
