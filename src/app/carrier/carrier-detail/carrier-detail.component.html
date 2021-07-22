@@ -39,7 +39,7 @@
     <span>
         <a routerLink="/dispatcher/create">Add Dispatcher</a>
     </span>
-    <table *ngif="carrier">
+    <table *ngIf="carrier">
         <tr>
             <th>Id</th>
             <th>Firstname</th>
@@ -65,7 +65,7 @@
     <span>
         <a routerLink="/driver/create">Add Driver</a>
     </span>
-    <table *ngif="carrier">
+    <table *ngIf="carrier">
         <tr>
             <th>Id</th>
             <th>Firstname</th>
