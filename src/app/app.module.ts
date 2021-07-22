@@ -60,6 +60,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { CustomersTableComponent } from './dash/customers-table/customers-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { CardComponent } from './dash/card/card.component';
 
 
 
@@ -112,7 +117,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     
 
     DispatcherDetailComponent,    
-    DashComponent,
+    DashComponent, CustomersTableComponent, CardComponent,
 
 
 
@@ -137,7 +142,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatSelectModule,
     MatCheckboxModule,
     MatDatepickerModule,
-    LayoutModule
+    LayoutModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

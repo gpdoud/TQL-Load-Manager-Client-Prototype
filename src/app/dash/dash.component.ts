@@ -9,31 +9,25 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 })
 export class DashComponent {
   /** Based on the screen size, switch from standard to one column per row */
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+  cardLayout = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
-        return [
-          { title: 'High Prio Loads', cols: 1, rows: 1 },
-          { title: 'High Prio Customers', cols: 1, rows: 1 },
-          { title: 'Needs Covered', cols: 1, rows: 1 },
-          { title: 'Prospects', cols: 1, rows: 1 },
-          { title: 'Check Calls', cols: 1, rows: 1 },
-          { title: 'Reports', cols: 1, rows: 2 },
-          { title: 'All Loads', cols: 1, rows: 1 }
-        ];
+        return {
+          columns: 1,
+          miniCard: { cols: 1, rows: 1 },
+          chart: { cols: 1, rows: 2 },
+          table: { cols: 1, rows: 4 },
+        };
       }
-
-      return [
-        { title: 'High Prio Loads', cols: 1, rows: 1 },
-        { title: 'High Prio Customers', cols: 1, rows: 1 },
-        { title: 'Needs Covered', cols: 1, rows: 1 },
-        { title: 'Prospects', cols: 1, rows: 1 },
-        { title: 'Check Calls', cols: 1, rows: 1 },
-        { title: 'Reports', cols: 1, rows: 2 },
-        { title: 'All Loads', cols: 1, rows: 1 }
-      ];
+ 
+     return {
+        columns: 4,
+        miniCard: { cols: 1, rows: 1 },
+        chart: { cols: 2, rows: 2 },
+        table: { cols: 4, rows: 4 },
+      };
     })
   );
-
+ 
   constructor(private breakpointObserver: BreakpointObserver) {}
 }
