@@ -2,6 +2,11 @@ import { Carrier } from "../carrier/carrier.class";
 import { Customer } from "../customer/customer.class";
 import { Shed } from "../shed/shed.class";
 import { User } from "../user/user.class";
+import { CommodityDelivery } from "./commodity/commodity-delivery.class";
+import { CommodityPickup } from "./commodity/commodity-pickup.class";
+import { Commodity } from "./commodity/commodity.class";
+import { Delivery } from "./delivery/delivery.class";
+import { Pickup } from "./pickup/pickup.class";
 
 export class Load {
     id: number = 0;
@@ -12,13 +17,11 @@ export class Load {
     customerId: number = 0;
     customer: Customer | null = null;
 
+    pickup: Pickup[] = [];
 
-    dropId: number = 0;
-    drop: Shed | null = null;
+    delivery: Delivery[] = [];
 
     carrierId: number = 0;
     carrier: Carrier | null = null;
 
-    // userId: number = 0;
-    // user: User | null = null;
 }
