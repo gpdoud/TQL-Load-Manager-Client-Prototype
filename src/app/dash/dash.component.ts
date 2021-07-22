@@ -13,18 +13,24 @@ export class DashComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
+          { title: 'High Prio Loads', cols: 1, rows: 1 },
+          { title: 'High Prio Customers', cols: 1, rows: 1 },
+          { title: 'Needs Covered', cols: 1, rows: 1 },
+          { title: 'Prospects', cols: 1, rows: 1 },
+          { title: 'Check Calls', cols: 1, rows: 1 },
+          { title: 'Reports', cols: 1, rows: 2 },
+          { title: 'All Loads', cols: 1, rows: 1 }
         ];
       }
 
       return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'High Prio Loads', cols: 1, rows: 1 },
+        { title: 'High Prio Customers', cols: 1, rows: 1 },
+        { title: 'Needs Covered', cols: 1, rows: 1 },
+        { title: 'Prospects', cols: 1, rows: 1 },
+        { title: 'Check Calls', cols: 1, rows: 1 },
+        { title: 'Reports', cols: 1, rows: 2 },
+        { title: 'All Loads', cols: 1, rows: 1 }
       ];
     })
   );
