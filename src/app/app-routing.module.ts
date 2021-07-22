@@ -60,12 +60,12 @@ const routes: Routes = [
 
   {path: 'dispatcher/list', component: DispatcherListComponent},
   {path: 'dispatcher/edit/:id', component: DispatcherEditComponent},
-  {path: 'dispatcher/create', component: DispatcherCreateComponent},
+  {path: 'dispatcher/create/:carrierid', component: DispatcherCreateComponent},
   {path: 'dispatcher/detail/:id', component: DispatcherDetailComponent},
 
   {path: 'driver/list', component: DriverListComponent},
   {path: 'driver/edit/:id', component: DriverEditComponent},
-  {path: 'driver/create', component: DriverCreateComponent},
+  {path: 'driver/create/:carrierid', component: DriverCreateComponent},
   {path: 'driver/detail/:id', component: DriverDetailComponent},
 
   {path: 'load/list', component: LoadListComponent},
