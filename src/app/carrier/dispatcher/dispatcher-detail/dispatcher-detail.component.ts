@@ -30,7 +30,7 @@ export class DispatcherDetailComponent implements OnInit {
   deleteDispatcher(){
     this.id =this.route.snapshot.params.id
     this.dispatchersvc.remove(this.id).subscribe(
-      res => {console.log("Success:", res); this.dispatcher = res; this.router.navigateByUrl("dispatcher/list")},
+      res => {console.log("Success:", res); this.dispatcher = res; this.router.navigateByUrl("carrier/list")},
       err => {console.error(err)});
   }
 

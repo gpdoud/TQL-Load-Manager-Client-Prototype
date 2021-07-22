@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Carrier } from '../../carrier.class';
 import { Dispatcher } from '../dispatcher.class';
 import { DispatcherService } from '../dispatcher.service';
 
@@ -10,31 +11,42 @@ import { DispatcherService } from '../dispatcher.service';
 })
 export class DispatcherCreateComponent implements OnInit {
 
+  newDispatcher = new Dispatcher();
   dispatcher: Dispatcher = new Dispatcher();
   dispatchers: Dispatcher[] = [];
+  carrierId: number = 0 ;
+  carrier! : Carrier;
 
   constructor(
     private dispatchersvc: DispatcherService,
-    private router: Router
+    private router: Router,
+    private route : ActivatedRoute
   ) { }
 
     save(): void {
-      this.dispatcher.id = +this.dispatcher.id;
-      this.dispatchersvc.create(this.dispatcher).subscribe(
+      this.newDispatcher.carrierId = +this.getId()
+      this.dispatchersvc.create(this.newDispatcher).subscribe(
         res => {
-          console.log("Creation Successful"); this.router.navigateByUrl("dispatcher/list")
+          console.log("Creation Successful", this.newDispatcher); this.router.navigateByUrl(`carrier/detail/${this.getId()}`)
       },
       err => {console.error(err)
       });
     }
 
-
+      getId(): number {
+      const routeParams = this.route.snapshot.paramMap;
+      const id = Number(routeParams.get('carrierid'))
+      return id;
+    }
+  
+    
 
   ngOnInit(): void {
     this.dispatchersvc.list().subscribe(
       res => {console.log(res); this.dispatchers = res;},
       err => {console.error(err);}
     )
+    this.carrierId = this.getId()
   }
 
 }

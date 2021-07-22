@@ -1,0 +1,12 @@
+#component {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button, a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color:black;
+    padding-bottom: 0%;
+}
+button:hover, a:hover {
+    color: rgb(8, 85, 252);
+}

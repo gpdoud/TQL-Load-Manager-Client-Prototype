@@ -45,8 +45,20 @@ import { DispatcherListComponent } from './carrier/dispatcher/dispatcher-list/di
 import { DispatcherEditComponent } from './carrier/dispatcher/dispatcher-edit/dispatcher-edit.component';
 import { DispatcherCreateComponent } from './carrier/dispatcher/dispatcher-create/dispatcher-create.component';
 import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detail/dispatcher-detail.component';
+
 import { SearchCustomerPipe } from './customer/search-customer.pipe';
 import { SortPipe } from './misc/sort.pipe';
+
+import { DashComponent } from './dash/dash.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutModule } from '@angular/cdk/layout';
+
+
 
 
 
@@ -93,12 +105,19 @@ import { SortPipe } from './misc/sort.pipe';
     DispatcherListComponent,
     DispatcherEditComponent,
     DispatcherCreateComponent,
+
     DispatcherDetailComponent,
     SearchCustomerPipe,
     SortPipe,
     
+    
+
+    DispatcherDetailComponent,    
+    DashComponent,
 
 
+
+    
    
 
   ],
@@ -106,7 +125,14 @@ import { SortPipe } from './misc/sort.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
