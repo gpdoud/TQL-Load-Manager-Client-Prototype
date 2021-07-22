@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Carrier } from '../../carrier.class';
 import { Driver } from '../driver.class';
 import { DriverService } from '../driver.service';
 
@@ -10,22 +11,26 @@ import { DriverService } from '../driver.service';
 })
 export class DriverCreateComponent implements OnInit {
 
-  driver: Driver = new Driver();
+  
+  newDriver= new Driver()
   drivers: Driver[] = [];
+  carrierId: number = 0;
+  carrier! : Carrier;
 
   constructor(
     private driversvc: DriverService,
+    private route: ActivatedRoute,
     private router: Router
 
   ) { }
 
 
   save(): void {
-    this.driver.id = +this.driver.id;
-    console.debug("B4", this.driver);
-    this.driversvc.create(this.driver).subscribe(
+    this.newDriver.carrierId = +this.carrierId
+    console.debug("B4", this.newDriver);
+    this.driversvc.create(this.newDriver).subscribe(
       res => {
-        console.log("Create successful"); this.router.navigateByUrl("driver/list")
+        console.log("Create successful"); this.router.navigateByUrl(`carrier/detail/${this.getId()}`)
       },
       err => {
         console.error(err);
@@ -34,6 +39,11 @@ export class DriverCreateComponent implements OnInit {
   }
 
 
+  getId(): number {
+    const routeParams = this.route.snapshot.paramMap;
+    const id = Number(routeParams.get('id'))
+    return id;
+  }
 
 
   ngOnInit(): void {
@@ -41,6 +51,7 @@ export class DriverCreateComponent implements OnInit {
       res => {console.log(res); this.drivers = res;},
       err => {console.error(err);}
     )
+    this.carrierId = this.getId()
   }
 
 }

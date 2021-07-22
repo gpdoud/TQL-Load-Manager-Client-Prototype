@@ -71,21 +71,27 @@
     <table *ngIf="carrier">
         <tr>
             <th>Id</th>
+            <th>carrierId</th>
             <th>Firstname</th>
             <th>Lastname</th>
             <th>Phone</th>
             <th>Email</th>
-            <th>Fax Number</th>
+            <th>TruckNumber</th>
+            <th>TrailerNumber</th>
+            <th>Equipment</th>
             <th>Approved For Comchecks</th>
             <th>Actions</th>
         </tr>
-        <tr *ngFor="let d of carrier.dispatchers">
+        <tr *ngFor="let d of carrier.drivers">
             <td>{{d.id}}</td>
+            <td>{{d.carrierId}}</td>
             <td>{{d.firstname}}</td>
             <td>{{d.lastname}}</td>
             <td>{{d.phone}}</td>
             <td>{{d.email}}</td>
-            <td>{{d.fax}}</td>
+            <td>{{d.truckNumber}}</td>
+            <td>{{d.trailerNumber}}</td>
+            <td>{{d.equipment}}</td>
             <td>{{d.isCckApproved}}</td>
         </tr>
     </table>
