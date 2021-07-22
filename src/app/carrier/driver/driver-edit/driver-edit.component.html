@@ -5,36 +5,39 @@
             <td><input [(ngModel)]="driver.id" type="number" disabled></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input [(ngModel)]="driver.firstname" type="text" ></td>
+            <td>Firstname</td>
+            <td><input [(ngModel)]="driver.firstname" type="text"></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input [(ngModel)]="driver.lastname" type="text" ></td>
+            <td>Lastname</td>
+            <td><input [(ngModel)]="driver.lastname" type="text"></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input [(ngModel)]="driver.phone" type="text" ></td>
+            <td>Phone</td>
+            <td><input [(ngModel)]="driver.phone" type="text"></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input [(ngModel)]="driver.email" type="text" ></td>
+            <td>Email</td>
+            <td><input [(ngModel)]="driver.email" type="text"></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input [(ngModel)]="driver.truckNumber" type="text" ></td>
+            <td>Truck Number</td>
+            <td><input [(ngModel)]="driver.truckNumber" type="text"></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input [(ngModel)]="driver.trailerNumber" type="text" ></td>
+            <td>TrailerNumber</td>
+            <td><input [(ngModel)]="driver.trailerNumber" type="text"></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input [(ngModel)]="driver.equipment" type="text" ></td>
+            <td>Equipment</td>
+            <td><input [(ngModel)]="driver.equipment" type="text"></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input [(ngModel)]="driver.isCckApproved" type="checkbox" ></td>
+            <td>Approved for Comchecks</td>
+            <td><input [(ngModel)]="driver.isCckApproved" type="checkbox"></td>
         </tr>
     </table>
+    <span>
+        <button (click)='save()' class="btn btn-primary">Save</button>
+    </span>
 </div>

@@ -32,7 +32,7 @@ export class DispatcherEditComponent implements OnInit {
   save(): void {
     this.dispatcher.id =+this.dispatcher.id;
     this.dispatchersvc.change(this.dispatcher).subscribe(
-      res => { console.log("Create successful"); this.router.navigateByUrl("dispatcher/list");},
+      res => { console.log("Create successful"); this.router.navigateByUrl("carrier/list");},
       err => {console.error(err)});
   }
 

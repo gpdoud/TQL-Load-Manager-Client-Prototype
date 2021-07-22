@@ -40,7 +40,7 @@
     <hr>
     <h2>Dispatchers</h2>
     <span>
-        <a routerLink="/dispatcher/create">Add Dispatcher</a>
+        <a routerLink="/dispatcher/create/{{carrier.id}}">Add Dispatcher</a>
     </span>
     <table *ngIf="carrier">
         <tr>
@@ -60,7 +60,16 @@
             <td>{{d.phone}}</td>
             <td>{{d.email}}</td>
             <td>{{d.fax}}</td>
-            <td>{{d.isCckApproved}}</td>
+            <td>{{d.isCckApproved ? "YES":"NO"}}</td>
+            <td>
+                <span>
+                    <a routerLink = "/dispatcher/detail/{{d.id}}">Detail</a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a routerLink = "/dispatcher/edit/{{d.id}}">Edit</a>
+                </span>
+            </td>
         </tr>
     </table>
     <hr>
@@ -92,7 +101,16 @@
             <td>{{d.truckNumber}}</td>
             <td>{{d.trailerNumber}}</td>
             <td>{{d.equipment}}</td>
-            <td>{{d.isCckApproved}}</td>
+            <td>{{d.isCckApproved ? "YES":"NO" }}</td>
+            <td>
+                <span>
+                    <a routerLink = "/driver/detail/{{d.id}}">Detail</a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a routerLink = "/driver/edit/{{d.id}}">Edit</a>
+                </span>
+            </td>
         </tr>
     </table>
 
