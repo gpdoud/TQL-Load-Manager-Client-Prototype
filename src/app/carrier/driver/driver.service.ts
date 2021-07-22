@@ -8,7 +8,7 @@ import { Driver } from './driver.class';
 })
 export class DriverService {
 
-  baseurl: string = "http://localhost:7400/api/requests"
+  baseurl: string = "http://localhost:7400/api/drivers"
 
   constructor(
     private http: HttpClient
@@ -22,15 +22,15 @@ export class DriverService {
     return this.http.get(`${this.baseurl}/${id}`) as Observable<Driver>;
   }
 
-  create(driver: Driver): Observable<Request> {
-    return this.http.post(`${this.baseurl}`, driver) as Observable<Request>;
+  create(driver: Driver): Observable<Driver> {
+    return this.http.post(`${this.baseurl}`, driver) as Observable<Driver>;
   }
 
   change(driver: Driver): Observable<any> {
     return this.http.put(`${this.baseurl}/${driver.id}`, driver) as Observable<any>;
   }
 
-  remove(id: number): Observable<Request> {
-    return this.http.delete(`${this.baseurl}/${id}`) as Observable<Request>;
+  remove(id: number): Observable<Driver> {
+    return this.http.delete(`${this.baseurl}/${id}`) as Observable<Driver>;
   }
 }
