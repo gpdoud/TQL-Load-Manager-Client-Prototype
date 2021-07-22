@@ -46,6 +46,15 @@ import { DispatcherEditComponent } from './carrier/dispatcher/dispatcher-edit/di
 import { DispatcherCreateComponent } from './carrier/dispatcher/dispatcher-create/dispatcher-create.component';
 import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detail/dispatcher-detail.component';
 import { LoadDetailComponent } from './load/load-detail/load-detail.component';
+import { DashComponent } from './dash/dash.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutModule } from '@angular/cdk/layout';
+
 
 
 
@@ -92,11 +101,17 @@ import { LoadDetailComponent } from './load/load-detail/load-detail.component';
     DispatcherListComponent,
     DispatcherEditComponent,
     DispatcherCreateComponent,
+
     DispatcherDetailComponent,
     LoadDetailComponent,
     
 
+    DispatcherDetailComponent,    
+    DashComponent,
 
+
+
+    
    
 
   ],
@@ -104,7 +119,14 @@ import { LoadDetailComponent } from './load/load-detail/load-detail.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

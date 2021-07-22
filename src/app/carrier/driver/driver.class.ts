@@ -1,7 +1,11 @@
+import { Carrier } from "../carrier.class";
+
 export class Driver {
 id: number = 0;
-firstName: string ="";
-lastName: string ="";
+carrierId: number = 0;
+carrier!: Carrier;
+firstname: string ="";
+lastname: string ="";
 phone: string="";
 email: string="";
 truckNumber: string ="";

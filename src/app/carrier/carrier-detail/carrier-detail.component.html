@@ -34,12 +34,15 @@
             <td><input [(ngModel)]="carrier.email" type="string" disabled></td>
         </tr>
     </table>
+    <div>
+        <button class="btn btn-danger" (click)="deleteCarrier()">Delete</button>
+    </div>
     <hr>
     <h2>Dispatchers</h2>
     <span>
-        <a routerLink="/dispatcher/create">Add Dispatcher</a>
+        <a routerLink="/dispatcher/create/{{carrier.id}}">Add Dispatcher</a>
     </span>
-    <table *ngif="carrier">
+    <table *ngIf="carrier">
         <tr>
             <th>Id</th>
             <th>Firstname</th>
@@ -57,33 +60,57 @@
             <td>{{d.phone}}</td>
             <td>{{d.email}}</td>
             <td>{{d.fax}}</td>
-            <td>{{d.isCckApproved}}</td>
+            <td>{{d.isCckApproved ? "YES":"NO"}}</td>
+            <td>
+                <span>
+                    <a routerLink = "/dispatcher/detail/{{d.id}}">Detail</a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a routerLink = "/dispatcher/edit/{{d.id}}">Edit</a>
+                </span>
+            </td>
         </tr>
     </table>
     <hr>
     <h2>Drivers</h2>
     <span>
-        <a routerLink="/driver/create">Add Driver</a>
+        <a routerLink="/driver/create/{{carrier.id}}">Add Driver</a>
     </span>
-    <table *ngif="carrier">
+    <table *ngIf="carrier">
         <tr>
             <th>Id</th>
+            <th>carrierId</th>
             <th>Firstname</th>
             <th>Lastname</th>
             <th>Phone</th>
             <th>Email</th>
-            <th>Fax Number</th>
+            <th>TruckNumber</th>
+            <th>TrailerNumber</th>
+            <th>Equipment</th>
             <th>Approved For Comchecks</th>
             <th>Actions</th>
         </tr>
-        <tr *ngFor="let d of carrier.dispatchers">
+        <tr *ngFor="let d of carrier.drivers">
             <td>{{d.id}}</td>
+            <td>{{d.carrierId}}</td>
             <td>{{d.firstname}}</td>
             <td>{{d.lastname}}</td>
             <td>{{d.phone}}</td>
             <td>{{d.email}}</td>
-            <td>{{d.fax}}</td>
-            <td>{{d.isCckApproved}}</td>
+            <td>{{d.truckNumber}}</td>
+            <td>{{d.trailerNumber}}</td>
+            <td>{{d.equipment}}</td>
+            <td>{{d.isCckApproved ? "YES":"NO" }}</td>
+            <td>
+                <span>
+                    <a routerLink = "/driver/detail/{{d.id}}">Detail</a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a routerLink = "/driver/edit/{{d.id}}">Edit</a>
+                </span>
+            </td>
         </tr>
     </table>
 
