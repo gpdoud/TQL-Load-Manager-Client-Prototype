@@ -5,18 +5,18 @@
         | <input [(ngModel)]="searchCriteria" type="text" placeholder="Search">
     </div>
   <div>
-      <table class="table table=hover table-sm">
+      <table class="table table-hover table-sm">
           <thead>
               <tr>
                   <th><button (click)="sortFn('id')" class = "btn btn-link">Id</button></th>
                   <th><button (click)="sortFn('name')" class = "btn btn-link">Name</button></th>
-                  <th>Address</th>
+                  <th><button class = "btn btn-link">Address</button></th>
                   <th><button (click)="sortFn('city')" class = "btn btn-link">City</button></th>
                   <th><button (click)="sortFn('state')" class = "btn btn-link">State</button></th>
-                  <th>Zip</th>
-                  <th>Status</th>
-                  <th>User</th>
-                  <th>Action</th>
+                  <th><button class = "btn btn-link">Zip</button></th>
+                  <th><button class = "btn btn-link">Status</button></th>
+                  <th><button class = "btn btn-link">User</button></th>
+                  <th><button class = "btn btn-link">Action</button></th>
               </tr>
           </thead>
           <tbody>
