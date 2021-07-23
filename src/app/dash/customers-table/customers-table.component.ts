@@ -16,7 +16,17 @@ export class CustomersTableComponent implements AfterViewInit {
   dataSource: CustomersTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = [
+    'id',
+     'name',
+     'code',
+     'address',
+     'city',
+     'state',
+     'zip',
+     'status',
+     'userId'
+    ];
 
   constructor() {
     this.dataSource = new CustomersTableDataSource();
