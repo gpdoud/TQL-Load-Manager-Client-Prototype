@@ -1,37 +1,85 @@
 <div>
     <h3>Future Freight</h3>
     <div>
-        <a routerLink="/load/create">Create</a>
+        <a routerLink="/load/create">Build a Load</a>
     </div>
     <div>
-        <table class="table table-hover table-sm">
+        <table class="table table-hover table-sm" style="background-color: aqua;">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>PoNumber</th>
                     <th>PayTruckRate</th>
                     <th>CustomerBillRate</th>
-                    <th>CustomerId</th>
-                    <th>Pickup</th>
-                    <th>Delivery</th>
-                    <th>CarrierId</th>
+                    <th>Customer</th>
+                    <th>Carrier</th>
                 </tr>
             </thead>
-            <tbody *ngFor="let l of loads" >
+            <tbody *ngFor="let l of loads">
                 <td>{{l.id}}</td>
                 <td>{{l.poNumber}}</td>
-                <td>{{l.payTruckRate}}</td>
-                <td>{{l.customerBillRate}}</td>
-                <td>{{l.customerId}}</td>
-                <td>{{l.pickup}}</td>
-                <td>{{l.delivery}}</td>
-                <td>{{l.carrierId}}</td>
+                <td>{{l.payTruckRate | currency}}</td>
+                <td>{{l.customerBillRate | currency}}</td>
+                <td>{{l.customer?.name}}</td>
+                <td>{{l.carrier?.name}}</td>
             </tbody>
         </table>
     </div>
     <hr>
     <h3>Uncovered Loads</h3>
+    <div>
+        <table class="table table-hover table-sm" style="background-color:yellow;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>PoNumber</th>
+                    <th>PayTruckRate</th>
+                    <th>CustomerBillRate</th>
+                    <th>Customer</th>
+                    <th>Pickup</th>
+                    <th>Delivery</th>
+                    <th>Carrier</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let l of loads">
+                <td>{{l.id}}</td>
+                <td>{{l.poNumber}}</td>
+                <td>{{l.payTruckRate | currency}}</td>
+                <td>{{l.customerBillRate | currency}}</td>
+                <td>{{l.customer?.name}}</td>
+                <td>{{l.pickup}}</td>
+                <td>{{l.delivery}}</td>
+                <td>{{l.carrier?.name}}</td>
+            </tbody>
+        </table>
+    </div>
     <hr>
     <h3>OTR</h3>
+    <div>
+        <table class="table table-hover table-sm" style="background-color: chartreuse;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>PoNumber</th>
+                    <th>PayTruckRate</th>
+                    <th>CustomerBillRate</th>
+                    <th>Customer</th>
+                    <th>Pickup</th>
+                    <th>Delivery</th>
+                    <th>Carrier</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let l of loads">
+                <td>{{l.id}}</td>
+                <td>{{l.poNumber}}</td>
+                <td>{{l.payTruckRate | currency}}</td>
+                <td>{{l.customerBillRate | currency}}</td>
+                <td>{{l.customer?.name}}</td>
+                <td>{{l.pickup}}</td>
+                <td>{{l.delivery}}</td>
+                <td>{{l.carrier?.name}}</td>
+            </tbody>
+        </table>
+    </div>
     <hr>
 </div>

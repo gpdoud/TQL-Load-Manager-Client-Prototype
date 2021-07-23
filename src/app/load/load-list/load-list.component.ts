@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Load } from '../load.class';
 import { LoadService } from '../load.service';
+import { Pickup } from '../pickup/pickup.class';
 
 @Component({
   selector: 'app-load-list',
@@ -18,6 +19,9 @@ export class LoadListComponent implements OnInit {
     this.loadsvc.list().subscribe(
       res => { console.log("Loads:", res); this.loads = res; },
       err => { console.error(err); });
+
+
   }
+
 
 }

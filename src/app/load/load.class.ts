@@ -16,9 +16,9 @@ export class Load {
 
     customerId: number = 0;
     customer: Customer | null = null;
-
+    
     pickup: Pickup[] = [];
-
+   
     delivery: Delivery[] = [];
 
     carrierId: number = 0;

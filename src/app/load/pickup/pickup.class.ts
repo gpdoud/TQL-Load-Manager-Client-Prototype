@@ -8,5 +8,6 @@ export class Pickup{
     onSite: boolean = false;
     loaded: boolean = false;
     shed!: Shed;
+    shedName: string ="";
     commodityPickup!: CommodityPickup[];
 }
