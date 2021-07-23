@@ -1,6 +1,10 @@
 <div>
     <table>
         <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="load.id" type="number" disabled></td>
+        </tr>
+        <tr>
             <td>TQL PO Number</td>
             <td><input [(ngModel)]="load.poNumber" type="number" disabled></td>
         </tr>
@@ -15,6 +19,14 @@
         <tr>
             <td>Customer</td>
             <td><input [(ngModel)]="load.customerId" type="text"></td>
+        </tr>
+        <tr>
+            <td>Pickup</td>
+            <td><input [(ngModel)]="load.pickup" type="text"></td>
+        </tr>
+        <tr>
+            <td>Delivery</td>
+            <td><input [(ngModel)]="load.delivery" type="text"></td>
         </tr>
         <tr>
             <td>Carrier</td>
