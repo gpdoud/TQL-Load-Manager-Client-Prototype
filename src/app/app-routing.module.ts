@@ -17,6 +17,7 @@ import { CustomerCreateComponent } from './customer/customer-create/customer-cre
 import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
+import { DashComponent } from './dash/dash.component';
 import { LoadCreateComponent } from './load/load-create/load-create.component';
 import { LoadEditComponent } from './load/load-edit/load-edit.component';
 import { LoadListComponent } from './load/load-list/load-list.component';
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path: '', redirectTo: '/load/list', pathMatch: 'full'},
 
 
+  {path: 'dashboard', component: DashComponent},
 
   {path: 'user/list', component: UserListComponent},
   {path: 'user/edit/:id', component: UserEditComponent},
@@ -60,12 +62,12 @@ const routes: Routes = [
 
   {path: 'dispatcher/list', component: DispatcherListComponent},
   {path: 'dispatcher/edit/:id', component: DispatcherEditComponent},
-  {path: 'dispatcher/create', component: DispatcherCreateComponent},
+  {path: 'dispatcher/create/:carrierid', component: DispatcherCreateComponent},
   {path: 'dispatcher/detail/:id', component: DispatcherDetailComponent},
 
   {path: 'driver/list', component: DriverListComponent},
   {path: 'driver/edit/:id', component: DriverEditComponent},
-  {path: 'driver/create', component: DriverCreateComponent},
+  {path: 'driver/create/:carrierid', component: DriverCreateComponent},
   {path: 'driver/detail/:id', component: DriverDetailComponent},
 
   {path: 'load/list', component: LoadListComponent},

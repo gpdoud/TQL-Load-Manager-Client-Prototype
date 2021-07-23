@@ -1,1 +1,44 @@
-<p>driver-list works!</p>
+<div>
+    <div>
+        <a routerLink="/driver/create">Create</a>
+    </div>
+    <hr>
+    <div>
+        <table  class="table table-hover table-sm" >
+            <tr>
+                <th>Id</th>
+                <th>CarrierId</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Truck Number</th>
+                <th>Trailer Number</th>
+                <th>Equipment</th>
+                <th>Approved for Ccks</th>
+                <th>Actions</th>
+            </tr>
+            <tr *ngFor = "let d of drivers">
+                <td>{{d.id}}</td>
+                <td>{{d.carrierId}}</td>
+                <td>{{d.firstname}}</td>
+                <td>{{d.lastname}}</td>
+                <td>{{d.phone}}</td>
+                <td>{{d.email}}</td>
+                <td>{{d.truckNumber}}</td>
+                <td>{{d.trailerNumber}}</td>
+                <td>{{d.equipment}}</td>
+                <td>{{d.isCckApproved}}</td>
+                <td>
+                    <span>
+                        <a routerLink="/driver/detail/{{d.id}}">Detail</a>
+                    </span>
+                    <span> | </span>
+                    <span>
+                        <a routerLink="/driver/edit/{{d.id}}">Edit</a>
+                    </span>
+                    </td>
+            </tr>
+        </table>
+    </div>
+</div>

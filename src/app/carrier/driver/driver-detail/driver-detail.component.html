@@ -1,1 +1,43 @@
-<p>driver-detail works!</p>
+<div>
+    <table class="table table-sm" *ngIf="driver">
+        <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="driver.id" type="number" disabled></td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td><input [(ngModel)]="driver.firstname" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td><input [(ngModel)]="driver.lastname" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input [(ngModel)]="driver.phone" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input [(ngModel)]="driver.email" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>Truck Number</td>
+            <td><input [(ngModel)]="driver.truckNumber" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>Trailer Number</td>
+            <td><input [(ngModel)]="driver.trailerNumber" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>Equipment</td>
+            <td><input [(ngModel)]="driver.equipment" type="string" disabled></td>
+        </tr>
+        <tr>
+            <td>Approved for Cck</td>
+            <td><input [(ngModel)]="driver.isCckApproved" type="checkbox" disabled></td>
+        </tr>
+        <div>
+            <button class="btn btn-danger" (click)="deleteDriver()">Delete</button>
+        </div>
+    </table>
+</div>

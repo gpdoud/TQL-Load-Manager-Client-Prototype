@@ -1,37 +1,36 @@
-<div>
-    <table>
-        <tr>
-            <td>Id</td>
-            <td><input [(ngModel)]="carrier.id" type="number" name="Id" disabled></td>
-        </tr>
-        <tr>
-            <td>Name</td>
-            <td><input [(ngModel)]="carrier.name" type="string" name="name" placeholder="Name"></td>
-        </tr>
-        <tr>
-            <td>Address</td>
-            <td><input [(ngModel)]="carrier.address" type="string" name="address" placeholder="Address"></td>
-        </tr>
-        <tr>
-            <td>City</td>
-            <td><input [(ngModel)]="carrier.city" type="string" name="address" placeholder="City"></td>
-        </tr>
-        <tr>
-            <td>State</td>
-            <td><input [(ngModel)]="carrier.state" type="string" name="address" placeholder="State"></td>
-        </tr>
-        <tr>
-            <td>Zip</td>
-            <td><input [(ngModel)]="carrier.zip" type="string" name="address" placeholder="Zip"></td>
-        </tr>
-        <tr>
-            <td>Phone</td>
-            <td><input [(ngModel)]="carrier.phone" type="string" name="phone" placeholder="Phone"></td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td><input [(ngModel)]="carrier.email" type="string" name="email" placeholder="Email"></td>
-        </tr>
-    </table>
-    <button (click)='save()' class="btn btn-primary">Save</button>
-</div>
+<h3>Carrier Create</h3>
+<table>
+    <tr>
+        <td>Id</td>
+        <td><input [(ngModel)]="carrier.id" type="number" name="Id" disabled></td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td><input [(ngModel)]="carrier.name" type="string" name="name" placeholder="Name"></td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td><input [(ngModel)]="carrier.address" type="string" name="address" placeholder="Address"></td>
+    </tr>
+    <tr>
+        <td>City</td>
+        <td><input [(ngModel)]="carrier.city" type="string" name="address" placeholder="City"></td>
+    </tr>
+    <tr>
+        <td>State</td>
+        <td><input [(ngModel)]="carrier.state" type="string" name="address" placeholder="State"></td>
+    </tr>
+    <tr>
+        <td>Zip</td>
+        <td><input [(ngModel)]="carrier.zip" type="string" name="address" placeholder="Zip"></td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td><input [(ngModel)]="carrier.phone" type="string" name="phone" placeholder="Phone"></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input [(ngModel)]="carrier.email" type="string" name="email" placeholder="Email"></td>
+    </tr>
+</table>
+<button (click)='save()' class="btn btn-primary">Save</button>

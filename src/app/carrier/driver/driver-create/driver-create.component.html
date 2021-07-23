@@ -1,1 +1,46 @@
-<p>driver-create works!</p>
+<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="newDriver.id" type="number" name="Id" disabled></td>
+        </tr>
+        <tr>
+            <td>Carrier Id</td>
+            <td><input [(ngModel)]="carrierId" type="number" name="Id" disabled></td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td><input [(ngModel)]="newDriver.firstname" type="text" name="code" placeholder="Firstname"></td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td><input [(ngModel)]="newDriver.lastname" type="text" name="code" placeholder="Lastname"></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input [(ngModel)]="newDriver.phone" type="text" name="code" placeholder="Phone"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input [(ngModel)]="newDriver.email" type="text" name="code" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td>Truck Number</td>
+            <td><input [(ngModel)]="newDriver.truckNumber" type="text" name="code" placeholder="TruckNumber"></td>
+        </tr>
+        <tr>
+            <td>Trailer Number</td>
+            <td><input [(ngModel)]="newDriver.trailerNumber" type="text" name="code" placeholder="TrailerNumber"></td>
+        </tr>
+        <tr>
+            <td>Equipment</td>
+            <td><input [(ngModel)]="newDriver.equipment" type="text" name="code" placeholder="Equipment"></td>
+        </tr>
+        <tr>
+            <td>Approved for Ccks</td>
+            <td><input [(ngModel)]="newDriver.isCckApproved" type="checkbox" name="code" placeholder="ApprovedForCcks"></td>
+        </tr>
+       
+    </table>
+    <button (click)='save()' class="btn btn-primary">Save</button>
+</div>
