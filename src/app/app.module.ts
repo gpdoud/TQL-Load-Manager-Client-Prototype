@@ -57,7 +57,21 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { CustomersTableComponent } from './dash/customers-table/customers-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { CardComponent } from './dash/card/card.component';
+import { ProspectsTableComponent } from './dash/prospects-table/prospects-table.component';
+import { AccountingTableComponent } from './dash/accounting-table/accounting-table.component';
+import { HighprioloadsTableComponent } from './dash/highprioloads-table/highprioloads-table.component';
+import { CheckcallsTableComponent } from './dash/checkcalls-table/checkcalls-table.component';
 
 
 
@@ -113,7 +127,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     
 
     DispatcherDetailComponent,    
-    DashComponent,
+    DashComponent, CustomersTableComponent, CardComponent, ProspectsTableComponent, AccountingTableComponent, HighprioloadsTableComponent, CheckcallsTableComponent,
 
 
 
@@ -132,7 +146,16 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    MatInputModule,
+    MatFormFieldModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    LayoutModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,7 @@ import { Navbar } from './navbar.class';
 export class NavbarComponent implements OnInit {
 
   navbars: Navbar[] =[
+    new Navbar("Dashboard", "/dashboard"),
     new Navbar("User", "/user/list"),
     new Navbar("Carrier", "/carrier/list"),
     new Navbar("Customer", "/customer/list"),

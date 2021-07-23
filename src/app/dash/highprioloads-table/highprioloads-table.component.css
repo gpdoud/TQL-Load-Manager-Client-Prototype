@@ -1,0 +1,10 @@
+.full-width-table {
+  width: 100%;
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+}
+
+.small-table{
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+}
