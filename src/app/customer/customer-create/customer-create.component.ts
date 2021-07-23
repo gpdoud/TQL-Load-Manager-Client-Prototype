@@ -23,7 +23,7 @@ export class CustomerCreateComponent implements OnInit {
   saveCreate(): void {
     this.customer.userId =+ this.customer.userId;
     this.custsvc.create(this.customer).subscribe(
-      res => {console.debug("edit successful");
+      res => {console.debug("create successful");
               this.router.navigateByUrl("/customer/list");},
       err => {console.error(err);}        
     );}
