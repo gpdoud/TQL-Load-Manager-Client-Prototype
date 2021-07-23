@@ -1,26 +1,46 @@
-<h1>Sheds</h1>
-<p><input type="text" [(ngModel)]="searchCriteria" placeholder="Search"></p>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Zip</th>
-            <th>Phone</th>
-            <th>Email</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let shed of sheds | searchShed:searchCriteria">
-            <td>{{shed.name}}</td>
-            <td>{{shed.address}}</td>
-            <td>{{shed.city}}</td>
-            <td>{{shed.state}}</td>
-            <td>{{shed.zip}}</td>
-            <td>{{shed.phone}}</td>
-            <td>{{shed.email}}</td>
-        </tr>
-    </tbody>
-</table>
+<div id = "component">
+<h3>Sheds</h3>
+    <div style="width: 200px;">
+        <a routerLink = "/shed/create">Create</a>
+        <div class="input-group mb-3">
+            <p><input type="text" [(ngModel)]="searchCriteria" placeholder="Search"></p>
+        </div>
+    </div>
+
+    <div>
+        <table class="table table-hover table-sm">
+            <thead>
+                <tr>
+                    <th><button class = "btn btn-link">Name</button></th>
+                    <th><button class = "btn btn-link">Address</button></th>
+                    <th><button class = "btn btn-link">City</button></th>
+                    <th><button class = "btn btn-link">State</button></th>
+                    <th><button class = "btn btn-link">Zip</button></th>
+                    <th><button class = "btn btn-link">Phone</button></th>
+                    <th><button class = "btn btn-link">Email</button></th>
+                    <th><button class = "btn btn-link">Actions</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let s of sheds | searchShed:searchCriteria">
+                    <td>{{s.name}}</td>
+                    <td>{{s.address}}</td>
+                    <td>{{s.city}}</td>
+                    <td>{{s.state}}</td>
+                    <td>{{s.zip}}</td>
+                    <td>{{s.phone}}</td>
+                    <td>{{s.email}}</td>
+                    <td>
+                        <span>
+                            <a routerLink = "/shed/detail/{{s.id}}">Detail</a>
+                        </span>
+                        <span> | </span>
+                        <span>
+                            <a routerLink = "/shed/edit/{{s.id}}">Edit</a>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

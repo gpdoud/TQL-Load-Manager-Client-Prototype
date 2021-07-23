@@ -17,8 +17,10 @@ export class Load {
     customerId: number = 0;
     customer: Customer | null = null;
 
+    pickId: number = 0;
     pickup: Pickup[] = [];
-
+    
+    dropId: number = 0;
     delivery: Delivery[] = [];
 
     carrierId: number = 0;
