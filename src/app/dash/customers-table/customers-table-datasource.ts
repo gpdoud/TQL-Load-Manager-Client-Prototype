@@ -30,15 +30,15 @@ const EXAMPLE_DATA: CustomersTableItem[] = [
   {id: 8, name: 'DSV AIR & SEA INC (SLC)',        code: 'DSV ',     address: '1545 S 4800 W',                 city: 'Salt Lake City',       state: 'UT',   zip: '84104',    status: true,  userId: 6},
   {id: 9, name: 'Q & B FOODS',                    code: 'Q & ',     address: '15547 First Street',            city: 'Irwindale',            state: 'CA',   zip: '91706',    status: true,  userId: 7},
   {id: 10, name: 'OCONEE SAND AND GRAVEL',        code: 'OCON',     address: '797 harmony rd',                city: 'Eatonton',             state: 'GA',   zip: '31024',    status: true,  userId: 8},
-  {id: 11, name: 'AMERICAN YEAST SALES INC',      code: 'AMER',     address: '331 Commerce Way, STE 2',       city: 'Pembroke',             state: 'NH',   zip: '3275',     status: true,  userId: 9},
-  {id: 12, name: 'DYNASOL LLC',                   code: 'DYNA',     address: '14340 Torrey Chase Blvd',       city: 'Houston',              state: 'TX',   zip: '77014',    status: true,  userId: 10},
-  {id: 13, name: 'Asset Store LLC',               code: 'ASSE',     address: '2811 Sisson St',                city: 'Baltimore',            state: 'MD',   zip: '21211',    status: true,  userId: 9},
-  {id: 14, name: 'WILBERT FUNERAL SERVICES',      code: 'WILB',     address: '2913 Gardner Rd',               city: 'Broadview',            state: 'IL',   zip: '60155',    status: true,  userId: 5},
-  {id: 15, name: 'PLASTICS EXCHANGE',             code: 'PLAS',     address: '28230 N. 69th St.',             city: 'Scottsdale',           state: 'AZ',   zip: '85266',    status: true,  userId: 6},
-  {id: 16, name: 'SOUTHEAST ENVIROTX',            code: 'SOUT',     address: '8725 CALERA DRIVE',             city: 'Austin',               state: 'TX',   zip: '78735',    status: true,  userId: 9},
-  {id: 17, name: 'BRANDT CONSOLIDATED (FRESNO)',  code: 'BRAN',     address: 'PO Box 3500',                   city: 'Fresno',               state: 'CA',   zip: '93745',    status: true,  userId: 4},
-  {id: 18, name: 'JOFRAN INC',                    code: 'JOFR',     address: 'One Jofran Way',                city: 'Norfolk',              state: 'MA',   zip: '2056',     status: true,  userId: 1},
-  {id: 19, name: 'SOUTHEAST ENVIROTX',            code: 'SOUT',     address: '8725 CALERA DRIVE',             city: 'Austin',               state: 'TX',   zip: '78735',    status: true,  userId: 8}
+  // {id: 11, name: 'AMERICAN YEAST SALES INC',      code: 'AMER',     address: '331 Commerce Way, STE 2',       city: 'Pembroke',             state: 'NH',   zip: '3275',     status: true,  userId: 9},
+  // {id: 12, name: 'DYNASOL LLC',                   code: 'DYNA',     address: '14340 Torrey Chase Blvd',       city: 'Houston',              state: 'TX',   zip: '77014',    status: true,  userId: 10},
+  // {id: 13, name: 'Asset Store LLC',               code: 'ASSE',     address: '2811 Sisson St',                city: 'Baltimore',            state: 'MD',   zip: '21211',    status: true,  userId: 9},
+  // {id: 14, name: 'WILBERT FUNERAL SERVICES',      code: 'WILB',     address: '2913 Gardner Rd',               city: 'Broadview',            state: 'IL',   zip: '60155',    status: true,  userId: 5},
+  // {id: 15, name: 'PLASTICS EXCHANGE',             code: 'PLAS',     address: '28230 N. 69th St.',             city: 'Scottsdale',           state: 'AZ',   zip: '85266',    status: true,  userId: 6},
+  // {id: 16, name: 'SOUTHEAST ENVIROTX',            code: 'SOUT',     address: '8725 CALERA DRIVE',             city: 'Austin',               state: 'TX',   zip: '78735',    status: true,  userId: 9},
+  // {id: 17, name: 'BRANDT CONSOLIDATED (FRESNO)',  code: 'BRAN',     address: 'PO Box 3500',                   city: 'Fresno',               state: 'CA',   zip: '93745',    status: true,  userId: 4},
+  // {id: 18, name: 'JOFRAN INC',                    code: 'JOFR',     address: 'One Jofran Way',                city: 'Norfolk',              state: 'MA',   zip: '2056',     status: true,  userId: 1},
+  // {id: 19, name: 'SOUTHEAST ENVIROTX',            code: 'SOUT',     address: '8725 CALERA DRIVE',             city: 'Austin',               state: 'TX',   zip: '78735',    status: true,  userId: 8}
 ];
 
 /**

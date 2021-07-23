@@ -17,6 +17,7 @@ export class DashComponent {
           miniCard: { cols: 1, rows: 1 },
           chart: { cols: 1, rows: 2 },
           table: { cols: 1, rows: 4 },
+          bigTable: { cols: 1, rows: 4 },
         };
       }
  
@@ -24,7 +25,8 @@ export class DashComponent {
         columns: 4,
         miniCard: { cols: 1, rows: 1 },
         chart: { cols: 2, rows: 2 },
-        table: { cols: 4, rows: 4 },
+        table: { cols: 2, rows: 4 },
+        bigTable: { cols: 4, rows: 4 },
       };
     })
   );

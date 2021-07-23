@@ -2,34 +2,30 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
-import { CustomersTableDataSource, CustomersTableItem } from './customers-table-datasource';
+import { ProspectsTableDataSource, ProspectsTableItem } from './prospects-table-datasource';
 
 @Component({
-  selector: 'app-customers-table',
-  templateUrl: './customers-table.component.html',
-  styleUrls: ['./customers-table.component.css']
+  selector: 'app-prospects-table',
+  templateUrl: './prospects-table.component.html',
+  styleUrls: ['./prospects-table.component.css']
 })
-export class CustomersTableComponent implements AfterViewInit {
+export class ProspectsTableComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  @ViewChild(MatTable) table!: MatTable<CustomersTableItem>;
-  dataSource: CustomersTableDataSource;
+  @ViewChild(MatTable) table!: MatTable<ProspectsTableItem>;
+  dataSource: ProspectsTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = [
-    'id',
-     'name',
-     'code',
-     'address',
-     'city',
-     'state',
-     'zip',
-    //  'status',
-    //  'userId'
-    ];
+  displayedColumns = [    'id',
+  'name',
+  'code',
+  'address',
+  'city',
+  'state',
+  'zip',];
 
   constructor() {
-    this.dataSource = new CustomersTableDataSource();
+    this.dataSource = new ProspectsTableDataSource();
   }
 
   ngAfterViewInit(): void {

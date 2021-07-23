@@ -65,6 +65,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { CardComponent } from './dash/card/card.component';
+import { ProspectsTableComponent } from './dash/prospects-table/prospects-table.component';
 
 
 
@@ -117,7 +118,7 @@ import { CardComponent } from './dash/card/card.component';
     
 
     DispatcherDetailComponent,    
-    DashComponent, CustomersTableComponent, CardComponent,
+    DashComponent, CustomersTableComponent, CardComponent, ProspectsTableComponent,
 
 
 
