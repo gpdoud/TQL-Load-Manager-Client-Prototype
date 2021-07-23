@@ -1,1 +1,45 @@
-
+<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="load.id" type="number" disabled></td>
+        </tr>
+        <tr>
+            <td>PoNumber</td>
+            <td><input [(ngModel)]="load.poNumber" type="number"></td>
+        </tr>
+        <tr>
+            <td>PayTruckRate</td>
+            <td><input [(ngModel)]="load.payTruckRate" type="number"></td>
+        </tr>
+        <tr>
+            <td>CustomerBillRate</td>
+            <td><input [(ngModel)]="load.customerBillRate" type="number"></td>
+        </tr>
+        <tr>
+            <td>CustomerId</td>
+            <td><input [(ngModel)]="load.customerId" type="number"></td>
+        </tr>
+        <tr>
+            <td>Pickup</td>
+            <td>
+                <select [(ngModel)]="newLoad.pickup" >
+                    <option *ngFor="let s of sheds" value={{s.id}}>{{s.name}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Delivery</td>
+            <td>
+                <select [(ngModel)]="newLoad.delivery" >
+                    <option *ngFor="let s of sheds" value={{s.id}}>{{s.name}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>CarrierId</td>
+            <td><input [(ngModel)]="load.carrierId" type="number"></td>
+        </tr>
+    </table>
+    <button (click)='save()' class="btn btn-primary">Save</button>
+</div>

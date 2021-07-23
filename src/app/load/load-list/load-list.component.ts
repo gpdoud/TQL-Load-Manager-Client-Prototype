@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Load } from '../load.class';
 import { LoadService } from '../load.service';
+import { Pickup } from '../pickup/pickup.class';
 
 @Component({
   selector: 'app-load-list',
@@ -8,17 +9,19 @@ import { LoadService } from '../load.service';
   styleUrls: ['./load-list.component.css']
 })
 export class LoadListComponent implements OnInit {
+  loads!: Load[];
 
   constructor(
     private loadsvc: LoadService
   ) { }
-  loads!: Load[];
 
   ngOnInit(): void {
     this.loadsvc.list().subscribe(
-      res => {this.loads = res; console.debug(res)},
-      err => {console.error(err)}
-    )
+      res => { console.log("Loads:", res); this.loads = res; },
+      err => { console.error(err); });
+
+
   }
+
 
 }

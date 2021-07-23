@@ -21,6 +21,7 @@ import { DashComponent } from './dash/dash.component';
 import { LoadCreateComponent } from './load/load-create/load-create.component';
 import { LoadEditComponent } from './load/load-edit/load-edit.component';
 import { LoadListComponent } from './load/load-list/load-list.component';
+import { AboutComponent } from './misc/about/about.component';
 import { E404Component } from './misc/e404/e404.component';
 import { ShedCreateComponent } from './shed/shed-create/shed-create.component';
 import { ShedDetailComponent } from './shed/shed-detail/shed-detail.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
 
 
   {path: 'dashboard', component: DashComponent},
+  {path: 'about', component: AboutComponent },
 
   {path: 'user/list', component: UserListComponent},
   {path: 'user/edit/:id', component: UserEditComponent},

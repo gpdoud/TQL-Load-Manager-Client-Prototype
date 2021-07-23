@@ -1,23 +1,24 @@
-<h3>Users</h3>
 <div id = "component">
-    <div>
-        <a routerLink = "/user/create">Create</a> | <input [(ngModel)]="searchCriteria" type="text" placeholder="Search">
-    </div>
-    
+<h3>Users</h3>
+    <div style="width: 200px;">
+        <a routerLink = "/user/create">Create</a> 
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+       
         
-    
+    </div>    
 <div>
     <table class="table table-hover table-sm">
         <thead>
             <tr>
-                <th><button  class = "btn btn-link">Id</button></th>
-                <th><button  class = "btn btn-link">Username</button></th>
-                <th><button  class = "btn btn-link">Firstname</button></th>
-                <th><button  class = "btn btn-link">Lastname</button></th>
-                
-                <th><button  class = "btn btn-link">Email</button></th>
-                
-                <th><button  class = "btn btn-link">IsAdmin</button></th>
+                <th><button class = "btn btn-link">Id</button></th>
+                <th><button class = "btn btn-link">Username</button></th>
+                <th><button class = "btn btn-link">Firstname</button></th>
+                <th><button class = "btn btn-link">Lastname</button></th>
+                <th><button class = "btn btn-link">Email</button></th>
+                <th><button class = "btn btn-link">IsAdmin</button></th>
                 <th><button class="btn btn-link">Actions</button></th>
             </tr>
         </thead>
@@ -27,9 +28,7 @@
                 <td>{{u.username}}</td>
                 <td>{{u.firstname}}</td>
                 <td>{{u.lastname}}</td>
-                
                 <td>{{u.email}}</td>
-                
                 <td>{{u.isAdmin ? "YES":"NO"}}</td>
                 <td>
                     <span>

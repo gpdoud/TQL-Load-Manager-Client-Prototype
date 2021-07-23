@@ -45,7 +45,10 @@ import { DispatcherListComponent } from './carrier/dispatcher/dispatcher-list/di
 import { DispatcherEditComponent } from './carrier/dispatcher/dispatcher-edit/dispatcher-edit.component';
 import { DispatcherCreateComponent } from './carrier/dispatcher/dispatcher-create/dispatcher-create.component';
 import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detail/dispatcher-detail.component';
-import { LoadDetailComponent } from './load/load-detail/load-detail.component';
+
+import { SearchCustomerPipe } from './customer/search-customer.pipe';
+import { SortPipe } from './misc/sort.pipe';
+
 import { DashComponent } from './dash/dash.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -69,6 +72,7 @@ import { ProspectsTableComponent } from './dash/prospects-table/prospects-table.
 import { AccountingTableComponent } from './dash/accounting-table/accounting-table.component';
 import { HighprioloadsTableComponent } from './dash/highprioloads-table/highprioloads-table.component';
 import { CheckcallsTableComponent } from './dash/checkcalls-table/checkcalls-table.component';
+
 
 
 
@@ -117,7 +121,9 @@ import { CheckcallsTableComponent } from './dash/checkcalls-table/checkcalls-tab
     DispatcherCreateComponent,
 
     DispatcherDetailComponent,
-    LoadDetailComponent,
+    SearchCustomerPipe,
+    SortPipe,
+    
     
 
     DispatcherDetailComponent,    

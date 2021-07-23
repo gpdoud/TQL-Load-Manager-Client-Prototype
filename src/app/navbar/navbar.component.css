@@ -1,25 +1,26 @@
 nav {
-    background-color: aliceblue;
-    width: 80%;
+    background-color: rgb(200, 229, 255);
+    width: 100%;
     display: inline-block;
+    text-align: end;
 }
 ul {
-    display: inline;
     margin: 0;
     padding: 0;
-    color: black;
 }
-div {
-    display: inline-block;
-    width: 20%;
-    background-color: aliceblue;
-    text-align: right;
-}
+
 li {
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline;
-    text-decoration: 0;
     padding: 0 10px;
     margin: 10px;
     color:#2e2d2d;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover {
+    color:rgb(49, 85, 201)
 }
