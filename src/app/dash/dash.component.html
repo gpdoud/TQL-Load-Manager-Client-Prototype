@@ -10,7 +10,7 @@
     <!--High Prio Loads Table-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.table?.cols" [rowspan]="( cardLayout | async )?.table?.rows">
       <app-card title="High Prio Loads">
-        <div>Loads Table Here</div>
+        <app-highprioloads-table></app-highprioloads-table>
       </app-card>
     </mat-grid-tile>
     <!--High Prio Customers Table-->
@@ -22,7 +22,7 @@
     <!--Check Calls Table-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.table?.cols" [rowspan]="( cardLayout | async )?.table?.rows">
       <app-card title="Check Calls Needed">
-        <div>Check Calls Table Here</div>
+        <app-checkcalls-table></app-checkcalls-table>
       </app-card>
     </mat-grid-tile>
     <!--High Prio Prospects Table-->
@@ -34,8 +34,8 @@
     <!--BigTable-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.bigTable?.cols" [rowspan]="( cardLayout | async )?.bigTable?.rows">
       <app-card title="Accounting Load Board Snapshot">
-        <div>Accounting Information Table Here</div>
-      </app-card>
+        <app-accounting-table></app-accounting-table>
+            </app-card>
     </mat-grid-tile>
   </mat-grid-list>
  </div>

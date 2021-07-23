@@ -1,0 +1,68 @@
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <!-- poNumber Column -->
+    <ng-container matColumnDef="poNumber">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>PO#</th>
+      <td mat-cell *matCellDef="let row">{{row.poNumber}}</td>
+    </ng-container>
+
+    <!-- customerCode Column -->
+    <ng-container matColumnDef="customerCode">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Customer</th>
+      <td mat-cell *matCellDef="let row">{{row.customerCode}}</td>
+    </ng-container>
+
+    <!-- amtBilled Column -->
+    <ng-container matColumnDef="amtBilled">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Billed Amount</th>
+      <td mat-cell *matCellDef="let row">{{row.amtBilled}}</td>
+    </ng-container>
+
+    <!-- payTruckAmt Column -->
+    <ng-container matColumnDef="payTruckAmt">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Pay Truck</th>
+      <td mat-cell *matCellDef="let row">{{row.payTruckAmt}}</td>
+    </ng-container>
+
+    <!-- pickupLoc Column -->
+    <ng-container matColumnDef="pickupLoc">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Pickup</th>
+      <td mat-cell *matCellDef="let row">{{row.pickupLoc}}</td>
+    </ng-container>
+
+    <!-- pickupDate Column -->
+    <ng-container matColumnDef="pickupDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Pickup Date</th>
+      <td mat-cell *matCellDef="let row">{{row.pickupDate}}</td>
+    </ng-container>
+
+    <!-- deliveryLoc Column -->
+    <ng-container matColumnDef="deliveryLoc">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Delivery</th>
+      <td mat-cell *matCellDef="let row">{{row.deliveryLoc}}</td>
+    </ng-container>
+
+    <!-- deliveryDate Column -->
+    <ng-container matColumnDef="deliveryDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Delivery Date</th>
+      <td mat-cell *matCellDef="let row">{{row.deliveryDate}}</td>
+    </ng-container>
+
+    <!-- status Column -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+      <td mat-cell *matCellDef="let row">{{row.status}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data?.length"
+      [pageIndex]="0"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 20]"
+      aria-label="Select page">
+  </mat-paginator>
+</div>

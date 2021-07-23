@@ -11,12 +11,15 @@ export class CardComponent implements OnInit {
   
   constructor() { }
   
-  cardVisible: boolean = true;
+  contentDisplay: boolean = true;
   
   ngOnInit(): void {
   }
   
-  hideCard(): void{
-    this.cardVisible = false;
+  showContent(): void{
+    this.contentDisplay = true;
+  }
+  hideContent(): void{
+    this.contentDisplay = false;
   }
 }
