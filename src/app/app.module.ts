@@ -49,6 +49,7 @@ import { DispatcherDetailComponent } from './carrier/dispatcher/dispatcher-detai
 import { SearchCustomerPipe } from './customer/search-customer.pipe';
 import { SortPipe } from './misc/sort.pipe';
 
+import {MatExpansionModule} from '@angular/material/expansion';
 import { DashComponent } from './dash/dash.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -134,7 +135,7 @@ import { SearchCarrierPipe } from './carrier/search-carrier.pipe';
     SortPipe,
     
     
-
+    
     DispatcherDetailComponent,    
     DashComponent, CustomersTableComponent, CardComponent, ProspectsTableComponent, AccountingTableComponent, HighprioloadsTableComponent, CheckcallsTableComponent, MiniCardComponent, MiniCardTwelveComponent, MiniCardLcComponent, MiniCardCallsComponent, SearchCarrierPipe
 
@@ -164,7 +165,9 @@ import { SearchCarrierPipe } from './carrier/search-carrier.pipe';
     LayoutModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatExpansionModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
