@@ -16,7 +16,8 @@ export class ProspectsTableComponent implements AfterViewInit {
   dataSource: ProspectsTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = [    'id',
+  displayedColumns = [   
+    //  'id',
   'name',
   'code',
   'address',

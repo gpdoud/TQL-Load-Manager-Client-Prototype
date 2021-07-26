@@ -17,7 +17,7 @@ export class CustomersTableComponent implements AfterViewInit {
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = [
-    'id',
+    // 'id',
      'name',
      'code',
      'address',
