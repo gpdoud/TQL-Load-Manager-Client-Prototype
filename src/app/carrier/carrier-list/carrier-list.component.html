@@ -1,47 +1,49 @@
-<h3>Carriers</h3>
 <div id="component">
-    <div>
-        <a routerLink="/carrier/create">Create</a>
-    </div>
-    <div>
-        <div>
-            <hr>
-            <div>
-                <table class="table table-hover table-sm">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Name</th>
-                            <th>Address</th>
-                            <th>City</th>
-                            <th>State</th>
-                            <th>Zip</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let c of carriers">
-                            <td>{{c.id}}</td>
-                            <td>{{c.name}}</td>
-                            <td>{{c.address}}</td>
-                            <td>{{c.city}}</td>
-                            <td>{{c.state}}</td>
-                            <td>{{c.zip}}</td>
-                            <td>{{c.phone}}</td>
-                            <td>{{c.email}}</td>
-                            <td>
-                                <span>
-                                    <a routerLink="/carrier/detail/{{c.id}}">Detail</a>
-                                </span>
-                                <span> | </span>
-                                <span>
-                                    <a routerLink="/carrier/edit/{{c.id}}">Edit</a>
-                                </span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <h3>Carriers</h3>
+        <div style="width: 200px;">
+            <a routerLink="/carrier/create">Create</a>
+            <div class="input-group mb-3">
+                <p><input type="text" [(ngModel)]="searchCriteria" placeholder="Search"></p>
             </div>
+    
         </div>
+    <div>
+        <table class="table table-hover table-sm">
+            <thead>
+                <tr>
+                    <th><button class = "btn btn-link">Id</button></th>
+                    <th><button class = "btn btn-link">Name</button></th>
+                    <th><button class = "btn btn-link">Address</button></th>
+                    <th><button class = "btn btn-link">City</button></th>
+                    <th><button class = "btn btn-link">State</button></th>
+                    <th><button class = "btn btn-link">Zip</button></th>
+                    <th><button class = "btn btn-link">Phone</button></th>
+                    <th><button class = "btn btn-link">Email</button></th>
+                    <th><button class = "btn btn-link">Actions</button></th>
+                                
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of carriers">
+                    <td>{{c.id}}</td>
+                    <td>{{c.name}}</td>
+                    <td>{{c.address}}</td>
+                    <td>{{c.city}}</td>
+                    <td>{{c.state}}</td>
+                    <td>{{c.zip}}</td>
+                    <td>{{c.phone}}</td>
+                    <td>{{c.email}}</td>
+                    <td>
+                        <span>
+                            <a routerLink="/carrier/detail/{{c.id}}">Detail</a>
+                        </span>
+                        <span> | </span>
+                        <span>
+                            <a routerLink="/carrier/edit/{{c.id}}">Edit</a>
+                        </span>
+                    </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
