@@ -3,36 +3,36 @@
   <h1 class="mat-h1">Dashboard</h1>
   <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
     <!--Mini Cards-->
-    <mat-grid-tile *ngFor="let i of [1]" [colspan]="( cardLayout | async )?.miniCard?.cols"
+    <mat-grid-tile  [colspan]="( cardLayout | async )?.miniCard?.cols"
       [rowspan]="( cardLayout | async )?.miniCard?.rows">
-      <app-card title="Card {{i}}">
+      <app-card >
         <app-mini-card></app-mini-card>
       </app-card>
     </mat-grid-tile>
-    <mat-grid-tile *ngFor="let i of [2]" [colspan]="( cardLayout | async )?.miniCard?.cols"
+    <mat-grid-tile [colspan]="( cardLayout | async )?.miniCard?.cols"
     [rowspan]="( cardLayout | async )?.miniCard?.rows">
-    <app-card title="Card {{i}}">
+    <app-card>
       <app-mini-card-twelve></app-mini-card-twelve>
     </app-card>
   </mat-grid-tile>
-  <mat-grid-tile *ngFor="let i of [3]" [colspan]="( cardLayout | async )?.miniCard?.cols"
+  <mat-grid-tile [colspan]="( cardLayout | async )?.miniCard?.cols"
   [rowspan]="( cardLayout | async )?.miniCard?.rows">
-  <app-card title="Card {{i}}">
+  <app-card>
     <app-mini-card-lc></app-mini-card-lc>
   </app-card>
 </mat-grid-tile>
-<mat-grid-tile *ngFor="let i of [4]" [colspan]="( cardLayout | async )?.miniCard?.cols"
+<mat-grid-tile [colspan]="( cardLayout | async )?.miniCard?.cols"
 [rowspan]="( cardLayout | async )?.miniCard?.rows">
-<app-card title="Card {{i}}">
+<app-card>
   <app-mini-card-calls></app-mini-card-calls>
 </app-card>
 </mat-grid-tile>
-    <!--High Prio Loads Table-->
-    <mat-grid-tile [colspan]="( cardLayout | async )?.table?.cols" [rowspan]="( cardLayout | async )?.table?.rows">
-      <app-card title="High Prio Loads">
-        <app-highprioloads-table></app-highprioloads-table>
-      </app-card>
-    </mat-grid-tile>
+    <!--High Prio Loads Table-->   
+        <mat-grid-tile [colspan]="( cardLayout | async )?.table?.cols" [rowspan]="( cardLayout | async )?.table?.rows">
+          <app-card title="High Prio Loads">
+            <app-highprioloads-table></app-highprioloads-table>
+        </app-card>
+      </mat-grid-tile>
     <!--High Prio Customers Table-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.table?.cols" [rowspan]="( cardLayout | async )?.table?.rows">
       <app-card title="High Prio Customers">
@@ -51,11 +51,19 @@
         <app-prospects-table></app-prospects-table>
       </app-card>
     </mat-grid-tile>
+    
     <!--BigTable-->
-    <mat-grid-tile [colspan]="( cardLayout | async )?.bigTable?.cols" [rowspan]="( cardLayout | async )?.bigTable?.rows">
+    <!-- <mat-grid-tile [colspan]="( cardLayout | async )?.bigTable?.cols" [rowspan]="( cardLayout | async )?.bigTable?.rows">
       <app-card title="Accounting Load Board Snapshot">
         <app-accounting-table></app-accounting-table>
             </app-card>
-    </mat-grid-tile>
+    </mat-grid-tile> -->
   </mat-grid-list>
+  <!-- ExpansionTile -->
+  <mat-expansion-panel hideToggle >
+    <mat-expansion-panel-header>
+<h2>Accounting Loadboard Snapshot</h2> 
+  </mat-expansion-panel-header>
+   <app-accounting-table></app-accounting-table>
+  </mat-expansion-panel>
  </div>

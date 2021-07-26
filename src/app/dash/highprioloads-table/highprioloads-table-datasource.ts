@@ -28,7 +28,16 @@ const EXAMPLE_DATA: HighprioloadsTableItem[] = [
   { poNumber:15676683, customerCode: 'OCON', amtBilled:1500, payTruckAmt:1750, pickupLoc: 'AMERICAN YEAST', pickupDate: '2021-07-16 00:00', deliveryLoc: 'CORONA, CA', deliveryDate: '2021-07-19 00:00', status: 'HIGH PRIORITY'},
   { poNumber:15703686, customerCode: 'AMER', amtBilled:2700, payTruckAmt:3100, pickupLoc: 'American Warehouse', pickupDate: '2021-07-18 00:00', deliveryLoc: 'MURPHY TOMATOES DFW', deliveryDate: '2021-07-21 00:00', status: 'HIGH PRIORITY'},
   { poNumber:15950184, customerCode: 'JOFR', amtBilled:1300, payTruckAmt:1500, pickupLoc: 'FRESH VEGETABLES', pickupDate: '2021-08-01 00:00', deliveryLoc: 'MURPHY TOMATOES DFW', deliveryDate: '2021-08-04 00:00', status: 'HIGH PRIORITY'},
-  { poNumber:15960660, customerCode: 'BRAN', amtBilled:1075, payTruckAmt:1250, pickupLoc: 'RIVER CITY EQUIPMENT', pickupDate: '2021-08-03 00:00', deliveryLoc: 'SABOL & RICE INC.', deliveryDate: '2021-08-06 00:00', status: 'HIGH PRIORITY'}
+  { poNumber:15960660, customerCode: 'BRAN', amtBilled:1075, payTruckAmt:1250, pickupLoc: 'RIVER CITY EQUIPMENT', pickupDate: '2021-08-03 00:00', deliveryLoc: 'SABOL & RICE INC.', deliveryDate: '2021-08-06 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15754649, customerCode: 'COAS', amtBilled:3000, payTruckAmt:3492.72, pickupLoc: 'LOGANS INN', pickupDate: '2021-07-20 00:00', deliveryLoc: 'SABOL & RICE INC.', deliveryDate: '2021-07-23 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15867907, customerCode: 'DYNA', amtBilled:3000, payTruckAmt:3500, pickupLoc: 'Wilbert Burial Vault', pickupDate: '2021-07-22 00:00', deliveryLoc: 'BLUE BUFFALO', deliveryDate: '2021-07-25 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15912349, customerCode: 'TRAI', amtBilled:1000, payTruckAmt:1225, pickupLoc: 'ATLANTA PLASTIC INJECTION MOLDING', pickupDate: '2021-07-24 00:00', deliveryLoc: 'KROGER', deliveryDate: '2021-07-27 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15637171, customerCode: 'DSV ', amtBilled:2200, payTruckAmt:2500, pickupLoc: 'IRWINDALE WAREHOUSE', pickupDate: '2021-07-12 00:00', deliveryLoc: 'SOLO STOVE', deliveryDate: '2021-07-15 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15641955, customerCode: 'QBFO', amtBilled:3200, payTruckAmt:3600, pickupLoc: 'OCONEE SAND AND GRAVEL', pickupDate: '2021-07-14 00:00', deliveryLoc: 'INTERNATIONAL WHOLESALE', deliveryDate: '2021-07-17 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15676683, customerCode: 'OCON', amtBilled:1500, payTruckAmt:1750, pickupLoc: 'AMERICAN YEAST', pickupDate: '2021-07-16 00:00', deliveryLoc: 'CORONA, CA', deliveryDate: '2021-07-19 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15703686, customerCode: 'AMER', amtBilled:2700, payTruckAmt:3100, pickupLoc: 'American Warehouse', pickupDate: '2021-07-18 00:00', deliveryLoc: 'MURPHY TOMATOES DFW', deliveryDate: '2021-07-21 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15950184, customerCode: 'JOFR', amtBilled:1300, payTruckAmt:1500, pickupLoc: 'FRESH VEGETABLES', pickupDate: '2021-08-01 00:00', deliveryLoc: 'MURPHY TOMATOES DFW', deliveryDate: '2021-08-04 00:00', status: 'HIGH PRIORITY'},
+  { poNumber:15960660, customerCode: 'BRAN', amtBilled:1075, payTruckAmt:1250, pickupLoc: 'RIVER CITY EQUIPMENT', pickupDate: '2021-08-03 00:00', deliveryLoc: 'SABOL & RICE INC.', deliveryDate: '2021-08-06 00:00', status: 'HIGH PRIORITY'},
  ];
 
 /**

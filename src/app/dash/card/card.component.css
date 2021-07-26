@@ -25,7 +25,7 @@
     align-items: stretch;
  }
  
- mat-card {
+ .mat-card {
     display: flex;
     flex-direction: column;
  }
