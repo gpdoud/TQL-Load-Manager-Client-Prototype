@@ -35,7 +35,7 @@ import { UserListComponent } from './user/user-list/user-list.component';
 
 const routes: Routes = [
 
-  {path: '', redirectTo: '/load/list', pathMatch: 'full'},
+  {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
 
 
   {path: 'dashboard', component: DashComponent},
