@@ -72,6 +72,10 @@ import { ProspectsTableComponent } from './dash/prospects-table/prospects-table.
 import { AccountingTableComponent } from './dash/accounting-table/accounting-table.component';
 import { HighprioloadsTableComponent } from './dash/highprioloads-table/highprioloads-table.component';
 import { CheckcallsTableComponent } from './dash/checkcalls-table/checkcalls-table.component';
+import { MiniCardComponent } from './mini-card/mini-card.component';
+import { MiniCardTwelveComponent } from './mini-card-twelve/mini-card-twelve.component';
+import { MiniCardLcComponent } from './mini-card-lc/mini-card-lc.component';
+import { MiniCardCallsComponent } from './mini-card-calls/mini-card-calls.component';
 
 
 
@@ -119,6 +123,10 @@ import { CheckcallsTableComponent } from './dash/checkcalls-table/checkcalls-tab
     DispatcherListComponent,
     DispatcherEditComponent,
     DispatcherCreateComponent,
+    MiniCardComponent,
+    MiniCardTwelveComponent,
+    MiniCardLcComponent,
+    MiniCardCallsComponent,
 
     DispatcherDetailComponent,
     SearchCustomerPipe,
@@ -127,7 +135,7 @@ import { CheckcallsTableComponent } from './dash/checkcalls-table/checkcalls-tab
     
 
     DispatcherDetailComponent,    
-    DashComponent, CustomersTableComponent, CardComponent, ProspectsTableComponent, AccountingTableComponent, HighprioloadsTableComponent, CheckcallsTableComponent,
+    DashComponent, CustomersTableComponent, CardComponent, ProspectsTableComponent, AccountingTableComponent, HighprioloadsTableComponent, CheckcallsTableComponent, MiniCardComponent, MiniCardTwelveComponent, MiniCardLcComponent, MiniCardCallsComponent
 
 
 
