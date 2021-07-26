@@ -76,6 +76,7 @@ import { MiniCardComponent } from './mini-card/mini-card.component';
 import { MiniCardTwelveComponent } from './mini-card-twelve/mini-card-twelve.component';
 import { MiniCardLcComponent } from './mini-card-lc/mini-card-lc.component';
 import { MiniCardCallsComponent } from './mini-card-calls/mini-card-calls.component';
+import { SearchCarrierPipe } from './carrier/search-carrier.pipe';
 
 
 
@@ -135,7 +136,7 @@ import { MiniCardCallsComponent } from './mini-card-calls/mini-card-calls.compon
     
 
     DispatcherDetailComponent,    
-    DashComponent, CustomersTableComponent, CardComponent, ProspectsTableComponent, AccountingTableComponent, HighprioloadsTableComponent, CheckcallsTableComponent, MiniCardComponent, MiniCardTwelveComponent, MiniCardLcComponent, MiniCardCallsComponent
+    DashComponent, CustomersTableComponent, CardComponent, ProspectsTableComponent, AccountingTableComponent, HighprioloadsTableComponent, CheckcallsTableComponent, MiniCardComponent, MiniCardTwelveComponent, MiniCardLcComponent, MiniCardCallsComponent, SearchCarrierPipe
 
 
 
