@@ -17,7 +17,7 @@ export class E404Component implements OnInit {
   }
 
   navToHome(): void{
-    this.router.navigateByUrl("/home");
+    this.router.navigateByUrl("/dashboard");
   }
 
 }
