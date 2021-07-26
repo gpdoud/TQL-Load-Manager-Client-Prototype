@@ -3,10 +3,30 @@
   <h1 class="mat-h1">Dashboard</h1>
   <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
     <!--Mini Cards-->
-    <mat-grid-tile *ngFor="let i of [1, 2, 3, 4]" [colspan]="( cardLayout | async )?.miniCard?.cols"
+    <mat-grid-tile *ngFor="let i of [1]" [colspan]="( cardLayout | async )?.miniCard?.cols"
       [rowspan]="( cardLayout | async )?.miniCard?.rows">
-      <app-card title="Card {{i}}"><div>Mini Card Content Here</div></app-card>
+      <app-card title="Card {{i}}">
+        <app-mini-card></app-mini-card>
+      </app-card>
     </mat-grid-tile>
+    <mat-grid-tile *ngFor="let i of [2]" [colspan]="( cardLayout | async )?.miniCard?.cols"
+    [rowspan]="( cardLayout | async )?.miniCard?.rows">
+    <app-card title="Card {{i}}">
+      <app-mini-card-twelve></app-mini-card-twelve>
+    </app-card>
+  </mat-grid-tile>
+  <mat-grid-tile *ngFor="let i of [3]" [colspan]="( cardLayout | async )?.miniCard?.cols"
+  [rowspan]="( cardLayout | async )?.miniCard?.rows">
+  <app-card title="Card {{i}}">
+    <app-mini-card-lc></app-mini-card-lc>
+  </app-card>
+</mat-grid-tile>
+<mat-grid-tile *ngFor="let i of [4]" [colspan]="( cardLayout | async )?.miniCard?.cols"
+[rowspan]="( cardLayout | async )?.miniCard?.rows">
+<app-card title="Card {{i}}">
+  <app-mini-card-calls></app-mini-card-calls>
+</app-card>
+</mat-grid-tile>
     <!--High Prio Loads Table-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.table?.cols" [rowspan]="( cardLayout | async )?.table?.rows">
       <app-card title="High Prio Loads">
